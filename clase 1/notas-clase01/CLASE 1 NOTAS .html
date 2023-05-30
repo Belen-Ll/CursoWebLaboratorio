@@ -1,0 +1,151 @@
+<!DOCTYPE html> <!--La declaración <!DOCTYPE html> define este documento como HTML5.-->
+
+    <!--HTML es el lenguaje de marcado estándar para páginas web. Con HTML puedes crear tu propio sitio web.
+    es un conjunto de etiquetas y cada etiqueta esta compuesta de atributos atributos -->
+    <!--W3C: ente regulador de etiquetas de hoja de estilo y html, para
+        - HTML 5 MEJORA EL POSICIONAMIENTO o el CEO (motores de busqueda)-->
+
+    <!--RECUERDA QUE: Todos los documentos HTML deben comenzar con una declaración de tipo de documento: <!DOCTYPE html>.
+    El documento HTML en sí comienza <html>y termina con </html>.
+    La parte visible del documento HTML está entre <body> y </body>.-->
+
+    <!--NOTA: Los elementos HTML pueden estar anidados (pueden contener elementos).
+    Todos los documentos HTML consisten en elementos HTML anidados.-->
+
+<html lang="es"> <!--El elemento <html> es el elemento raíz de una página HTML.--> 
+    <!--El idioma del documento puede declararse en la etiqueta <html>.
+    - El idioma se declara con el atributo lang.
+    - Declarar un idioma es importante para las aplicaciones de accesibilidad (lectores de pantalla) y los motores de búsqueda:-->
+    
+    <head> <!-- El elemento <head> en HTML es un contenedor para metadatos. Los metadatos HTML son datos sobre el documento HTML.
+            Los metadatos no se muestran.
+            El elemento <head> se coloca entre la etiqueta <html> y la etiqueta <body> :-->
+            <!-- LAS ETIQUETAS META son todas aquellas, nos permite dar descripcion de la pagina, autor 
+            o dar caracteristicas para el posicionamiento para el CEO, para el motor de busqueda puedan indexar en la pagina-->
+        <meta charset="UTF-8"> <!-- especificar la codificacion de caracteres del documento.
+            Es muy importante etiquetar siempre los documentos web en forma explicita.
+            UTF-8 PALABRA ACENTUADAS O CARACTERES ESPECIALES -->
+        <meta name="viewport"   content="width-divise-width, initial-scale">
+            <!-- name="auhtor" de la pagina content el nombre del autor
+            content="nombre del autor"-->
+            <!-- name="keywords" es para palabras clave
+            content="" aqui irian las palabras clave separadas por una coma-->
+            <!-- name="copyright" content="contenido"-->
+            <!-- name="description" (no+ 144 caracteres) content=""-->
+            <!--HAY ETIQUETAS PREDETERMINADAS PARA REDES SOCIALES-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <!-- permite controlar caracteristicas del navegador,
+            si queremos que la pagina se cachee, que expire, hacer un refresh-->
+            <!-- <meta   http-equiv="refresh" content="10"> si que se refreque cada cierto tiempo
+            o que se actualize cada cierto tiempo-->
+                
+        <title> CLASE 1 NOTAS</title> <!--etiqueta abierta y cerrada-->
+            <!-- <title> Especifica información adicional sobre un elemento (se muestra como información sobre herramientas)-->
+            <!-- Este es un comentario html -->
+        <meta   name="robots" content="index,follow">
+            <!--es para que la pagina sea buscada por los diferentes motorres de busqueda
+            CONTENT="NOINDEX" hace que los buscadores NO BUSQUEN DENTRO DEL DOCUMENTO, indica que el documento no permite indexaciones-->
+        <link> <!--agregar enlace un enlace simbolico a un documento o una imagen o una hoja de estilo-->
+        <script></script> <!-- agregar enlace externo de javascrit o crear una funcion interna de JS-->
+    </head>
+    <body> <!--El elemento <body> contiene el contenido visible de la página.
+        TODO CONTENIDO MULTIMEDIA: texto, imagenes, audio-->
+        <!--Los elementos HTML sin contenido se denominan elementos vacíos.-->
+        <header>
+            <!-- contenedor de contenido para especificar la parte superior de la pagina
+                comportamiento del encabezado-->
+            logo <nav> menu... </nav> <!-- NAV: etiqueta de menu-->
+            <aside></aside> <!-- indica una seccion corta que no esta relacionada con el contenido del main-->
+        </header>
+        <main> <!-- indicar el elemento principal del documento
+            seccion de publicacion / blog-->
+            <article id="section">
+                <!--article: define lo que son secciones de publicacion, para contenidos de un blog-->
+                ancla <!--enlace de refencia con el ancla-->
+                <br><br><br> <br><br><br> <!-- los br son para saltos de linea-->
+                <p> esto es un parrafo <br> con un salto de linea</p>
+                <section> <!-- secciones, dentro del article-->
+                    WELCOME to the site <br><br>
+                        <!--codigo ASQUI: contiene codigos que permite visualizar los diferentes
+                            caracteres especiales del teclados y simbolos que no son visibles en todos los navegadores-->
+                        <!-- & o &# EL NUMERO DE CODIGO DAN EL SIMBOLO ASQUI-->
+                    &lt; &gt;
+                    &copy;
+                    &Nacute; <!--& (letra) acute, le agrega tilte a las letras-->
+                    &ntilde; <!-- agrega tilte a las letras-->
+                    &#163;
+                    &quot; <!-- muestra comilla ""-->
+                    &#64; <!-- es para mostrar el @--> <br><br>
+                    Hola&nbsp;&nbsp;&nbsp;¿como&nbsp;estas?<br>
+                    <!--&nbsp es para poner espacios, ya que no toma la cantidad de espacios-->
+                    <!-- <br> es un elemento vacío sin una etiqueta de cierre (la etiqueta <br> define un salto de línea):-->
+                </section>
+                <section>
+                    <h1>h1 - etiqueta de titulo</h1> <!--El elemento <h1> define un encabezado grande-->
+                    <!--Los encabezados HTML se definen con las etiquetas <h1> al <h6>.
+                    <h1> define el encabezado mas importante.
+                    <h2 a h6> define el encabezado menos importantes.-->
+                    <!-- MUY IMPORTANTE - SOLO PUEDE HABER 1 (una) SOLA ETIQUETA DE H1-->
+                    <!--utilizarlos de manera gerarquica-->
+                    <h2>h2 - etiqueta de subtitulo</h2>
+                    <!--si un atributo o etiqueta aparece marcada de color rojo es porque ya no se usa y hay que usar archivos CSS-->
+                    <h3>h3 - etiqueta titulo</h3>
+                    <h4>h4 - etiqueta titulo</h4>
+                    <h5>h5 - etiqueta titulo</h5>
+                    <h6>de h2 al h6 son de subtitulo - baja de tamaña</h6>
+                    <p>para texto "parrafo" se usa la etiquita P</p>
+                    <b>N</b>negrita - con la etiqueta b
+                    <b>negrita</b> <br>
+                    <u>subrayado....</u> con la etique u <u>su</u>braya<u>do</u><br>
+                    <u>subra<b>yado</b>......</u> se uso la etiqueta b y u
+                    <span class="" id="">texto</span>
+                        <!--SPAN, se usa para cambiar el color al contenido, PERO SE USAN LOS ESTILOS-->
+                        <!--TODAS LAS ETIQUETAS QUE ESTAN EN EL BODY, tiene dos atributos esenciales
+                        CLASS="clase" ID="identificador", nos permite que nuestro documento pueda trabajar con javasript y css-->
+                </section>
+                <br><br><br>
+                <section>
+                    <!-- <p>Este parrafo esta comentado y no se mostrara en la pagina web</p> -->
+                    <a href="" title="prueba enlace">ENLACE</a>
+                        <!--los enlaces pueden ser: INTERNOS (mediante archivo) o EXTERNOS (mediante una url)-->
+                        <!--href="" Especifica la URL (direccion web) para un enlace-->
+                    <a href="mailto:mailprueba@gmail.com" title="e-mail">email</a> <br>
+                    <a href="mailto:pruebaimagen@gmail.com">
+                        <img width="60" src="https://linube.com/blog/wp-content/uploads/correo-electronico.jpg" title="e-mail">
+                    </a>
+                        <!--MAILTO:EJEMPLO@GMAIL.COM, va abrir la aplicacion predeterminada para el envio de correo electronico-->
+                    <a href="https://www.wizardingworld.com/logout" title="vamos al mundo magico" target="_blank"> <br> wizardingworld </a>
+                
+                        
+                        <!--title: hace que aparesca el titulo del enlace al pasar el mouse por el-->
+                        <!-- El atributo targer="_blank" le dice al buscador como abrir el link.-->
+                        <!-- NOTA: las imagenes ya no se usan, se utilizan las fuentes de iconos-->
+                    <br>
+                    <img width="100" height="100" src="HUFFLEPUFF.jpg"  alt="casa de Hogwarts HUFFLEPUFF" title="HUFFLEPUFF"><br>
+                        <!--src="" Especifica la URL (direccion web) para una imagen-->
+                        <!--alt="" Especifica un texto alternativo para una imagen, cuando la imagen no se puede mostrar "enlace roto"-->
+                        <!--El archivo fuente (src), el texto alternativo (alt) width, y height se proporcionan como atributos:-->
+                        <!--atributos width y height, que especifica el ancho y el alto de la imagen:-->
+                    <a href="tel:+542234792305">numero telefonico</a><br> <!--realizar llamadas-->
+                    <a href="#section">anclas</a><br><!--es para ir a una  seccion del documento-->
+                        <!--se puede hacer siempre y cuando tenga una enlace de referencia
+                        osea que exista dentro de los contenedores
+                        <article id="section">
+                        ancla
+                        </article>-->
+                </section>
+            </article>
+            <footer>
+                <p>Todos los derechos reservados &copy; wizardingworld 2023</p>
+            </footer> <!--indica que hay un pie de pagina, la seccion del documento en la parte inferior-->
+        </main>          
+    </body>
+        <!-- NOTAS: CSS describe como se deben mostrar los elementos HTML en la pantalla, papel u otros medios.
+        CSS ahorra mucho trabajo . Puede controlar el diseño de varias paginas web a la vez.
+        CSS se puede agregar a elementos HTML de 3 maneras:
+        - En linea : mediante el uso del atributo de estilo en elementos HTML
+        - Interno : mediante el uso de un <style >elemento en la <head> seccion
+        - Externo : mediante el uso de un archivo CSS externo
+        La forma mas comun de agregar CSS es mantener los estilos en archivos CSS separados. Sin embargo, aqui
+        usaremos un estilo interno y en linea, porque es mas facil de demostrar y mas facil de probar.-->
+</html>

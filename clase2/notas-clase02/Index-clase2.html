@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-divise-width, initial-scale=1.0">
+    <title>clase 2 - atributos, enlases y cuadros</title> 
+</head>
+<body>
+    <!--Los atributos proporcionan información adicional sobre elementos HTML.
+    Todos los elementos HTML pueden tener atributos.
+    Los atributos proporcionan información adicional sobre un elemento.
+    Los atributos siempre se especifican en la etiqueta de inicio.
+    Los atributos generalmente vienen en pares nombre / valor como: nombre = "valor"-->
+    <!-- apertura de etiqueta, contenido y etiqueta de cierre-->
+    <!-- nombre <div>, el atributo id="" style-->
+       
+    <H2>SECCIONES DE COLORES CON DIV, PARA PROBAR COMO HACER ENLCES ANCLA</H2>  <!-- para enlaces de seccion, ejemplo con division de colores--> 
+    <div id="rojo" style="background-color: red; height: 80vh; width: 100"></div><br><br><br>
+        <!--div es una etiqueta de capa
+            id="" Especifica una identificación única para un elemento para hacer el anclaje
+            style="" Especifica un estilo CSS en línea para un elemento
+            se usa para especificar el estilo de un elemento, como color, fuente, tamaño, etc
+            width, y height se proporcionan como atributos specifica el ancho y el alto de la imagen-->
+    <div id="naranja" style="background-color: orangered; height: 80vh; width: 100"></div><br><br><br>
+    <div id="verde" style="background-color: green; height: 80vh; width: 100"></div><br><br><br>
+
+    <h2>ENLCES, ABRIR APP DE MAIL, ABRIR APP TELEFONO, ANCLAJES A SECCIONES</h2><!-- se veran diferantes tipos de ENLACES -->
+        <a title="Ejemplo" href="/home/belen/Documentos/PROGRAMACION/APUNTEyPRACTICA/clase 1/practica/Hola mundo.html" target="_blank"> Enlaces de ejemplo</a> 
+            <!--Los enlaces HTML se definen con la etiqueta <a>. y
+                title= es para darle un titulo y  que aparezca cuando se pasa el cursor sobre la palabra
+                href= la dirección del enlace interno (archivo) y/o externo (una url / otra pagina)-->
+            <!-- se cre un enlace a un archivo interno del sistema-->
+            <!-- Enlace a Pagina interna, target="_blank" para que se abra en una pestañea nueva-->
+        <a href="http://udemy.com" target="_blank"> Ir a udemy</a><br> <!--enlace externo-->
+     
+    <!--Enlaces Email-->
+        <a href="mailto:clase-utn@gmail.com">e-mail</a>
+
+    <!--Enlaces Telefonos Con codigo de area-->
+        <a href="tel:+542234792305">Telefono</a><br><br>
+    
+    <!--ENLACES DE SECCION - ANCLAS. para moverse a la seccion que se quiera-->
+        <a href="#rojo">seccion Roja</a>
+        <a href="#naranja">seccion naranja</a>
+        <a href="#verde">seccion verde</a><br><br><br><br>
+
+    <h2>ENLACES DE IMAGENES</h2><!--ENLACES DE IMAGENES-->
+        <img src="file:///home/belen/Documentos/PROGRAMACION/APUNTEyPRACTICA/clase2/notas-clase02/anime-girl.jpg" title="anime-girl" alt="algo sale mal"><br><!--interna-->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfDuZKG7430Cx6stabYxt9Ea1ZZ25JMb0MJFRY6Q&s" title="foto de anime" alt="chica anime"><br><!--exteerna-->
+            <!--Se usa la etiqueta img
+                el atributo src: es para marcar la  ruta o direccion donde se encuentra la imagen 
+                si es una imagen local/de la pc, indicar las carpetas y nombre de la imagen con su extencion (png, jpg....)
+                si es una imagen externa (interner) colocar el link-->
+            <!--title, es para dar un nombre cuando se pasa el mouse
+                alt, es para colocar un texto una imagen esta rota y para el posicionamiento CEO-->
+        <a href="https://www.google.com.ar" target="_blank">
+            <img src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" width="95">
+        </a><!-- En este caso, al cliquear en la imagen, te enviara a al enlace que se indico primero, 
+            el atributo width le cambia el tamaño, pero ya no se usa SE HACE CON HOJAS DE ESTILO CSS-->
+
+    <h2>LISTAS ORDENADAS Y DESORDENADAS</h2> <!-- Etiquetas de Lista-->
+        <ol><!-- La etiqueta OL va a mostrar una viñeta de LISTA ORDENADA
+            se puede cambiar pero con hojas de estilo-->
+            <li>Lista (1)</li><!-- y la etiqueta LI coloca elementos dentro de ambas-->
+            <li>Lista (2)</li>
+            <li>Lista (3)</li>
+        </ol><br>
+        <ul><!-- La etiqueta UL, crea un viñeta de LISTA DESORDENADA-->
+            <li> No hay orden</li>
+            <li> No hay orden</li>
+        </ul>
+
+        <h2>TABLAS</h2> <!-- TABLAS No se usan atributos, se usa CSS, pero aca estan para el ejemplo-->
+        <table border="1" width="90%""><!-- el atributo border esta discontinuado-->
+            <!--se lee la cant de filas y la cant columna-->
+            <thead> <!-- Etiqueta de Cabecera, le da un titulo a cada columna-->
+                <tr>
+                    <th>encab A</th>
+                    <th>encab B</th>
+                    <th>encab C</th>
+                    <th>encab D</th>
+                </tr>
+            </thead>
+            <tfoot><!--Pie de tabla-->
+                <tr>
+                    <th>pie A</th>
+                    <th>pie B</th>
+                    <th>pie C</th>
+                    <th>pie D</th>
+                </tr>
+            </tfoot>
+            <tbody><!--cuerpo de la tabla-->
+                <tr><!--Filas -->
+                    <td>a</td><!--Columnas-->
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                </tr>
+                <tr><!--Filas -->
+                    <td>1</td><!--columnas-->
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1a</td>
+                    <td>2b</td>
+                    <td>3c</td>
+                    <td>4d</td>
+                </tr>
+            </tbody>
+        </table><br><br>
+        <table border="1" width="100%">
+                <tr>
+                    <td colspan="3">etiqueta COLSPAN</td>
+                    <!-- Combinar Columnas con el atributo COLSPAN y el numero de columnas a combinar-->
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+        </table><br><br>
+        <table border="1" width="100%">
+                <tr>
+                    <td rowspan="3">ROWSPAN</td> <!-- Combinar FILAS con rowspan y la cantidad de filas a combinar-->
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+        </table><br>
+        
+        <table border="4" width="80%"><!--tabla de practica-->
+            <thead>
+                <tr>
+                    <th colspan="4">cabecera COLSPAN</th><!--en la cabecera se unificaron 4 columnas-->
+                </tr>
+                <tfoot>
+                    <th colspan="2">pie colspan</th>
+                    <th colspan="2">pie 2</th>
+                    <!--en el pie se unificaron las columnas en 2 pares-->
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">123a</td> <!--se unifico parte de la columna tomando 3 celdas - filas-->
+                        <td>1b</td>
+                        <td>1c</td>
+                        <td>1d</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">2bc</td><!--se combino 2 columnas tomando 2 celdas-->
+                        <td>2d</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">2345b</td> <!--combino parted de la columna tomando 3 filas - celdas-->
+                        <td>3c</td>
+                        <td>3d</td>
+                    </tr>
+                    <tr>
+                        <td>4a</td>
+                        <td>4c</td>
+                        <td>4d</td>
+                    </tr>
+                    <tr>
+                        <td>5a</td>
+                        <td>5c</td>
+                        <td>5d</td>
+                    </tr>
+                    <tr>
+                        <td>6a</td>
+                        <td>6b</td>
+                        <td>6c</td>
+                        <td>6d</td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table><br><br>
+
+    <h2>FORMULARIO</h2>
+        <form> <!--etiqueta para FORMULARIOS-->
+               <!-- CAJA DE TEXTO ( IMPUTS )-->
+            <p>caja input type""</p>
+            <input type="text"><br><br>  <!-- Inputs o cajas de texto
+                Depende el type, es la caja que se crea:
+                        text ( viene por default)
+                        password - coloca viñetas ocultando lo que se escribe
+                        number - Numerico
+                        date - fecha
+                        radio - seleccion simple
+                        checkbox - seleccionar multiples
+                        hidden - Oculto
+                        file - Abre para subir archivos -->
+            <input type="text" name="" placeholder="escribe aqui" required maxlength="10"><br><br>
+                <!--Name es el nombre que se le pone para que cuando se envie pueda ser interceptado desde otro lenguaje, ejemplo php
+                    placeholder: funciona solo e  las cajas donde el usuario ingresa datos, es el texto que aparece por default en la caja de texto
+                    required es para indicar que la caj que se deb llenar es requrida, maxlenght es la cantidad max que quieras poner en la caja de texto en este caso, 10 caracteres -->
+            <input type="text"><!-- la cja de type=text es por defecto-->
+            <br><br>
+            <p> se uso type password y un disable para desactivar la caja por eso no se puede escribir</p>
+            <input type="password">
+            <input type="password" disabled>
+                <!--password - Contraseña
+                    Disabled es para que este desavilitado la caja de texto -->
+            <br><br>
+            <p>tipo number</p>
+            <input type="number">
+            <input type="number" value="10" readonly><br><br>
+                <!-- value: coloca texto por defecto dentro de la caja 
+                readonly es para que la caja de texto sea solo lectura no permitira agregar datos-->
+            <input type="date" value="2022-02-02" min="2022-01-01" max="2023-12-25"><br><br>
+                <!-- va a abrir el calendario predeterminado
+                    Agregar atributo min o max para colocar una fecha minima y max para una fecha maxima-->
+            <input type="file"><!--es para agregar o subir archivo-->
+            <br><br>
+            <P>SELECCION DE OPCIONES SIMPLE Y MULTIPLE</P>
+            <input id="mujer" type="radio" value="M" name="genero">
+                <!-- los tipo radio, son para una caja de texto de forma circular, para elegir una opcion
+                con el name te da a elegir solo 1 opcion-->
+            <label for="mujer" type="radio" value="M" name="genero">Mujer</label>
+                <!--Los label usando un for hace que se relacione con el id del input, 
+                    sirve para que cuando clickee en el texto, se autoclickea-->
+            <input id="hombre" type="radio" value="H" name="genero">
+            <label for="hombre">Hombre</label>
+            <input id="ninguno" type="radio" value="." name="genero">
+            <label for="ninguno">....</label>
+            <br>
+            <input id="opcion1" type="checkbox" value="1" name="seleccion" checked>
+                <!--Los tipo checkbox, son para una caja de texto de forma cuadrada, para seleccion multiple
+                Checked es para que la opcion ya este preseleccionada--> 
+            <label for="opcion1">op 1</label>
+            <input id="opcion2" type="checkbox" value="2" name="seleccion">
+            <label for="opcion2">op 2</label>
+            <input id="opcion3" type="checkbox" value="3" name="seleccion">
+            <label for="opcion3">op 3</label>
+            <br><br>
+            <!-- BOTONES: Los botones HTML se definen con la etiqueta <button>-->
+            <button type="submit">Enviar la informacion</button>&nbsp; <!--Submit es para enviar los datos-->
+            <button type="Reset">Resetear todas las cajas de texto</button><br><br> <!--Reset es para resetear las cajas de texto
+                pero deja los valores por defecto que se indicaron-->
+            
+            <p>Area de texto</p><!--las areas de texto se usan hasta cierta longitud de caracters 50max-->
+                <textarea name="textoarea" placeholder="deje su mensaje" rows="6" cols="15"></textarea>&nbsp;
+                <!--Rows para darle la cantidad de filas (renglones) y cols la cantidad de caracteres por renglon-->
+
+            <p>lista desplegable</p>
+                <!--Select o Listas desplegables-->
+                <!--Select te abre una lista desplegable con opciones-->
+            <select name="" required multiple> <!--Para que funcione el required hay que colocar un valor por defecto y required multiple para varias opciones-->
+                <!--multiple, hace que se pueda escoger mas de una opcon-->
+                <option value="">selecione 1</option>
+                <option value="">selecione 2</option>
+                <option value="">selecione 3</option> 
+                <optgroup label="selecion num"><!--optgroup Agrupa opciones-->
+                    <option value="1">Uno</option> <!--esta equiqueta nos permite agregar las diferentes opciones-->
+                    <option value="2">Dos</option> 
+                    <option value="3" selected>Tres</option><!--el atributo Selected sirve para preseleccionar una opcion-->
+                </optgroup>
+                <optgroup label="chocolates"><!--optgroup Agrupa opciones-->
+                    <option value="blanco">blanco</option>
+                    <option value="semi-amargo">semi-amargo</option>
+                    <option value="amargo">amargo</option>
+                </optgroup> 
+                <optgroup label="Marcas">
+                    <option value="milka">milka</option>
+                    <option value="coffler">coffler</option>
+                    <option value="aguila">aguila</option>
+                </optgroup>   
+            </select>
+        </form>
+</body>
+</html>

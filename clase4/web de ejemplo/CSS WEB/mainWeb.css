@@ -1,0 +1,152 @@
+*{/*aqui se esta modificando todo el documento*/
+  margin: 0px; /*el MARGIN establece los margenes para el documento*/
+  padding: 0px; /*el PADDING establace el area de rrelleno en los cuatro lados del dicumento
+    es la cantidad de espacio entre el borde y el contenido del elemento
+    si se diera en % se referiria al ancho del elemento padre*/
+}
+body{
+    background-color: #e5f744; /*color de fondo*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*tipo de fuente*/
+}
+header{
+    width: 100%; /*ancho*/
+    height: 70px; /*alto*/
+    background-color: #EEEEEE;
+}
+
+main{/*aqui solo se cambio el color de fondo*/
+    background-color: beige;
+    width: 65%;
+    float: left;
+    clear: both;/*permite limpiar en su defecto posicionamiento de elementos o cajas*/
+}
+main img{ /*se cambia el tamaño de la imagen*/
+    max-width: 90%; /*se ajusta al tamaño y mayormente se trabaja en porcentaje
+        el min le indica el minimo que debe tener el elemtno o la caja*/
+    margin: 20px;
+    padding: 10px;
+    border: 3px double orange;/*borde a las elemntos o capa
+        se efine el tamaño del borde PX - 
+        ESTILO(tipo de linea) 
+        solid, dotted, dashed, double
+        -COLOR*/
+    border-radius: 50px 20px 20px 10px; /*aqui hace que se redondeen los bordes*/
+}
+main section{
+    padding: 30px;
+}
+main section p{
+    margin-bottom: 15px; /*aqui se esta haciendo una division entre parrafos*/
+    text-align: center;/*alineacion de texto center(centrado) left(izquierdo) right(derecho) justify(justificado)*/
+    line-height: 200%;/*se ajusta el interlineado em o %*/
+}
+h2{
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+aside{
+    width: 25%;
+    background-color: #f8d32f;
+    padding: 25px;
+    float: right;
+}
+aside p{
+    text-align: justify;
+    line-height: 100%;
+}
+
+aside ul li{
+    list-style-type: none;
+    color: black;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+footer{
+    clear: both;
+    color: black;
+    font-weight:bolder;
+    text-align: center;
+    width: 59%;
+    padding: 30px;
+    background-color: #fa881dec;
+}
+
+.principal{
+    max-width: 1000px;
+    margin: 0 auto; /*esto hace que se ajuste automaticamente*/
+}
+div.img{
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-top: 10px;
+    background-color:#1fdb9d;
+}
+div.img img{
+    width: 100%;
+    height: auto;
+}
+div.description{
+    padding: 5px;
+    text-align: center;
+    color: #203620;
+}
+div.img:hover{
+    border: 2px solid fuchsia; /*cuando se pasa el cursor sobre la imagen, se bordea*/
+}
+main section p::first-letter{/*aqui se modifico la primer letra de cada parrafo dentro del amin*/
+    font-size: 150%;
+    color: orchid;
+}
+.oculto{
+    display: none;
+}
+
+#menu{
+    margin-top: 10px;
+}
+#menu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0%;
+    position: relative;
+    float: left;
+}
+#menu ul a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 0px 15px;
+    line-height: 32px;
+}
+#menu ul li{
+    position: relative;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+#menu ul li a:hover{
+    background-color:#203620;
+    color: white;
+}
+#menu ul ul{
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+#menu ul ul li{
+    float: none;
+    width: 200px;
+}
+#menu ul ul li a{
+    color: white;
+}
+#menu ul li:hover > ul{ /*aqui le esta indicando que cuando haga hover al segundo elemnto
+    ul le colocara forma de display en block*/
+    display: block;
+}
+#menu ul ul li a:hover{
+    color:chartreuse;
+}

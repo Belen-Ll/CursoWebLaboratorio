@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewp" content="width-divise-width, initial-scale">
+    <title>esqueleto html</title>
+    <link rel="stylesheet" href="./CSS WEB/mainWeb.css">
+        <!--Con LINK enlasamos el archivo "REL:STYLESHEET - ESPARA EL TIPO DE ARCHIVO" y "HREF - LA RUTA"-->
+</head>
+<body>
+    <div class="principal"><!--se utiliza un div para delimitar mejor cada area y que luego con CSS se mas facil dar formato-->
+        <header><!--especicamos el encabezado de la pagina-->
+            <nav class="oculto"><!--indica menu-->
+                <ul><!--se crea una lista no ordenada-->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Historias">HIstorias</a></li>
+                    <li><a href="#">Contacto </a></li>
+                </ul>
+            </nav> <!-- ESTO ESTABA EN EL ARCHIVO CSS
+                        header nav ul li{
+                            list-style-type: none; /*aqui le quitamos las viñetas*/
+                            float: left; /*aqui se rotan los elementos a la izquierda*/
+                            border-right: 2px solid #203620; /*se coloca un borde en cada uno*/
+                        }
+                        header nav ul li a{
+                            text-decoration: none; /*le quitamos el subrayado, con none*/
+                            padding: 20px 15px 20px 15px;
+                            display: inline-block;
+                            color: #008000;
+                        }
+                        header nav ul li a:hover{/*el O¡HOVER ES PARA CUANDO SE PARA SOBRE EL ELEMENTO*/
+                            background-color: coral;
+                            color: black;
+                        }-->
+
+            <nav id="menu"><!--indica menu-->
+                <ul><!--se crea una lista no ordenada-->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#historias">Historias</a>
+                        <ul>
+                            <li><a href="#historias">Historias 1</a></li>
+                            <li><a href="#historias">Historias 2</a></li>
+                            <li><a href="#historias">Historias 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a>
+                        <ul>
+                            <li><a href="#contacto">Contacto 1</a></li>
+                            <li><a href="#contacto">Contacto 2</a></li>
+                            <li><a href="#contacto">Contacto 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main><!--elemento princial de la pagina-->
+            <img src="./imagenesWeb/dragones.jpg" alt="dragon">
+            <section id="Blog">
+                <h2>Dragones</h2>
+                <p>El tiempo y el hechizo de los dragones ha vuelto. ¿Cuál es el origen de los dragones? ¿Por qué su presencia ancestral en culturas tan diferentes del mundo? ¿Cómo es que han sobrevolado los tiempos y tomado fuerza para llegar hasta la cultura popular de hoy? ¿Cuáles son los motivos de su fascinación y misterio en personas de todas las edades y países? ¿Por qué son un reclamo, ahora, en los libros y series de televisión tan exitosas de los últimos años como El Hobbit, El señor de los anillos, Los anillos de poder, Juego de Tronos y La casa del Dragón?</p>
+                <p>Drákon, del griego, se transformó en Draco, del latín, hasta ser Dragón, en español, y Dragon en muchas lenguas más… Es una de las criaturas más fabulosas y enigmáticas salidas de la mente humana que mezclan en su cuerpo y acción lo terrenal con lo sobrenatural, un cuerpo hecho de diferentes animales que despierta tantos miedos como esperanzas, que desatan tantos simpatizantes como detractores, y de los que más incentivan la imaginación y la fantasía. El dragón es un ser omnipresente en diferentes culturas y épocas que ha sobrevivido a todas las generaciones en la Tierra, hasta tener una gran presencia en estas últimas décadas y vivir un momento de esplendor a través de la literatura que aliada con el cine, la televisión, el mundo virtual y los videojuegos alcanza una potencia y presencia inéditas.</p>
+            </section>
+            <section id="Historias">
+                <h2>Hstorias</h2>
+                <p>Historias con tramas situadas en épocas medievales, donde la lucha del bien y el mal en lo personal, social, sentimental y político es un tornado incesante. La presencia del dragón, los dragones, son un reclamo indiscutible. Simbolizan el poder y la derrota, la creación y la destrucción, la astucia y la fuerza, el mal y, a veecs, el bien… engendran la duda por saber de qué lado están. Su presencia otorga el carácter épico y legendario que tanto gusta al ser humano, y que a los adultos lo retrotrae al placer y aventuras de épocas fantasiosas. Historias que realmente los traslada a un tiempo y espacio fuera de este mundo, pero que hunde sus garras en él.</p>
+                <p>Los grandes pasos del esplendor actual de los dragones en la cultura popular nacen de libros que han tenido su versión audiovisual. Antes de entrar en ese mundo más actual vale la pena recordar su definición:
+                    Dragón: «Animal fabuloso con forma de reptil, muy corpulento, con garras y alas, y de extraña fiereza y voracidad», Real Academia Española (RAE).
+                    Dragon: «Un animal imaginario grande y aterrador, a menudo representado con alas, una cola larga y fuego saliendo de su boca»: Diccionario de Cambridge.
+                    Bienvenidos al mundo de los dragones: empezamos este relato de fotos y vídeos con su presencia en la mitología griega, como guardianes, y en la Biblia, como satanás; luego damos un salto a la era más contemporánea: desde El Hobbit y El señor de los anillos, de Tolkien, y su adaptación al cine, incluida la precuela Los anillos de poder; hasta Juego de Tronos y La casa del Dragón, de Martin, pasando por el dragón de la suerte de La historia interminable</p>
+            </section>
+        </main>
+        <aside><!--seccion corta que no esta relacionada con el contenido del main-->
+            <h2>Las Hadas</h2>
+            <p>Existen diferentes tipos de hadas: </p><br>
+            <ul><!--Aqui se creo una lista dentro de otra, LISTA ANIDADA
+                Esto se puede hacer siempre y cuando que la sublista este dentro de un li ccomo en este caso  -->
+                <li>Hadas de agua</li>
+                    <!--<ul>
+                        <li>Ondinas</li>
+                        <li>Nereidas</li>
+                        <li>Nayades</li>
+                    </ul>
+                </li>-->                
+                <li>Has de fuego </li>
+                <!--<ul>
+                        <li>Limnaiades</li>
+                        <li>Dedos de luz</li>
+                        <li>Salamandras</li>
+                    </ul>
+                </li>-->
+                <li>Hadas de tierra</li>
+                    <!--<ul>
+                        <li>Driades</li>
+                        <li>Alseides</li>
+                        <li>Damas verdes</li>
+                    </ul>
+                </li>-->
+            </ul>
+            <div class="img">
+                <a href="#">
+                    <img width="300" src="./imagenesWeb/dragones.jpg" alt="dragon">
+                </a>
+                <div class="description">Dragón</div>
+            </div>
+
+            <div class="img">
+                <a href="#">
+                    <img width="300" src="./imagenesWeb/dragones.jpg" alt="dragon">
+                </a>
+                <div class="description">Dragón</div>
+            </div>
+
+            <div class="img">
+                <a href="#">
+                    <img width="300" src="./imagenesWeb/dragones.jpg" alt="dragon">
+                </a>
+                <div class="description">Dragón</div>
+            </div>
+
+        </aside>
+        <footer>
+            <p>Estos animales realmente no existen ni existieron en la vida real. </p>
+        </footer>
+    </div>
+</body>
+</html>
+

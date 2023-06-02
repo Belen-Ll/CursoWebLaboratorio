@@ -1,0 +1,93 @@
+/*CSS significa C astcading S tile S heets
+    describe como se deben mostrar los elemnetos HTML en la pantalla, papael u otros medios*/
+/*En CSS se pueden agregar elementos a HTML de 3 maneras:
+    EN LINEA - mediante el uso de atributos estilo en elementos HTML
+    INTERNO - mediante el uso de un elemento <STYLE> EN SECCION <HEAD>
+    EXTERNO - mediante el uso de un archivo CSS EXTERNO*/
+/*CSS EXTERNO
+    Se utiliza un ahoja de estilo externa para definir el estilo de muchas paginas html
+    con una hoja de estilo externa, agregue un enlace en la seccion <HEAD> de la pagina html*/
+code{
+    font-size: 4em;
+    color: #cecece !important; /**/
+    /*la eiqueta, la palabra !IMPORTANT, hace que se salte la jerarquia*/
+    background-color: #FFFFFF; /*Se pueden establecer el color de fondo para los elementos HTML con este atributo*/
+}
+.codeUno{
+    color:red;
+}
+#codeUno{
+    color:blue;
+}
+p >b{/*El selector hijo selecciona todos los elementos que son hijos de un elemento especificado.*/
+    color: fuchsia; /*dentro de la eiqueta p donde encuentre la etiqueta b
+                        tambien se puede hacer con los class o con id */
+}
+p,b,code,#codeUno,#codeDos{/*agrupar selectores para cambiar un estilo*/
+    font-size: 10px;
+    padding: 10px; /*el padding es la separacion entre el margen y el contenido*/
+}
+p .codeUno{ /*el elemento p dentro de classUno*/
+    background-color: black;
+    color: white;
+}/*no se ve porque hay una propiedad de backgroud-color que esta cambiando */
+.class + p{ /*cuando se quiere el primer elemnto de inmediato, se utiliza con el mas (+) que coloca despues del claas*/
+
+}
+/*SELECTOR DE ATRIBUTO*/
+    /*hay selectores que pueden trabajar con atributos del elemnto de html
+    creando selector de atributo
+        [nombredelatributo]{} cambiamos su propiedad*/
+[title=Click2]{
+    color: orange;
+    font-size: 2em;
+}
+#p01{
+    color:mediumvioletred;
+    font-size: 2em;/*La propiedad font-size CSS define el tamaño del texto que se utilizará.*/
+    font-family:'Franklin Gothic Medium';/*La propiedad font-family CSS define la fuente que se utilizará.*/
+}
+/*SEUDO CLASS : ::*/
+
+p:first-cild{ /*hace referencia al primer elemento*/
+    background-color: aquamarine;
+    font-size:10px
+} 
+
+p:hover{ /*es para cuando se para sobre el elemento*/
+    font-size:30px;
+}
+
+li:nth-child(2){/*nth-child es un selector de elementos en la listas
+    va a buscar en la lista y se va a posicionar en el elemento que se le indico en este caso es el (2)*/
+    background: lawngreen;
+}
+:nth-child(3){/*aqui buscara en todo el documento*/
+    background: yellow;
+}
+
+
+/*SEUDO ELEMENTO QUE PERMITEN AÑADIR CONTENIDO A UN ELEMENTO AL PRINCIPIO O AL FINAL
+    SE USA MAYORMENTE CON IMAGNES, AQUI SE APLICA  AMODO DE EJEMPLO*/
+p::after{/*colocar antes*/
+    content: ". (Ejemplo)";
+}
+    /*aqui buscara todas las etiquetas p y colocara antes/inicio before- la palabra ejemplo
+        y colocara despues/final after- la palabra prueba*/
+p::before{/*colocar despues*/
+    content: "prueba:  ";
+    text-decoration: underline;
+}
+
+p::first-letter{ /*hace referenci a que dentro del parrafo la primer letra*/
+    background-color: #000000;
+    color: white;
+    padding: 2px;
+}
+input:focus{
+    padding: 4px;
+    border:5px solid red;
+    background-color: #000000;
+    color: white;
+
+}

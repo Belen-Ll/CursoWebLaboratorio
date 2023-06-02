@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        CSS significa C ascading S tyle S heets
+        describe cómo se deben mostrar los elementos HTML en la pantalla, papel u otros medios
+    -->
+    <title>HOJAS DE ESTILO</title>
+    <!--
+        EN LINEA - mediante el usos del atribut de estilo en un elemento HTML
+        INTERNO - mediante el uspo de de un elemento <STILE> EN LA SECCION <HEAD>
+    -->
+    <!-- LA FORMA MAS COMUN DE AGREGAR CSS ES MEDIANTE LOS ESTILOS DE ARCHIVOS CSS SEPARADOS
+    PERO AQUI USAREMOS ESTILO INTERNO Y EN LINEA, PORQUE ES MAS FACIL DE DEMOSTRAR Y MAS FACIL DE PROBRAR
+    -->
+   <!-- <style>
+        code{ /*El selector de elementos selecciona elementos HTML en función del nombre del elemento.*/
+            font-size: 4em;
+            color: #cecece !important; /*la eiqueta, la palabra !IMPORTANT, hace que se salte la jerarquia*/
+            background-color: #FFFFFF;
+        }
+        .codeUno{
+            color:red;
+        }
+        #codeUno{
+            color:blue;
+        }
+        p >b{ /*El selector hijo selecciona todos los elementos que son hijos de un elemento especificado.*/
+            color: fuchsia; /*dentro de la eiqueta p donde encuentre la etiqueta b
+                                tambien se puede hacer con los class o con id */
+        }
+        p,b,code,#codeUno,#codeDos{/*agrupar selectores para cambiar un estilo*/
+            font-size: 10px;
+            padding: 10px; /*el padding es la separacion entre el margen y el contenido*/
+        }
+        p .codeUno{ /*el elemento p dentro de classUno*/
+            background-color: black;
+            color: white;
+        }/*no se ve porque hay una propiedad de backgroud-color que esta cambiando */
+        .class + p{ /*cuando se quiere el primer elemnto de inmediato, se utiliza con el mas (+) que coloca despues del claas*/
+
+        }
+        /*SELECTOR DE ATRIBUTO*/
+            /*hay selectores que pueden trabajar con atributos del elemnto de html
+            creando seector de atributo
+            [nombredelatributo]{} cambiamos su propiedad
+            */
+        [title=Click2]{
+            color: orange;
+            font-size: 2em;
+        }
+        #p01{
+            color:mediumvioletred;
+            font-size: 2em;
+            font-family:'Franklin Gothic Medium';/*La propiedad font-family CSS define la fuente
+                                                    que se utilizará.*/
+        }
+    </style>-->
+    <link rel="stylesheet" href="./CSS/Untitled-1.css">
+    <!--LINK debe llevar un atributo REI-que especifica la relacion que debe llevar el doumento de estilo con el que se quiere linkear
+        href- para la ruta del archivo-->
+</head>
+    <!--
+        HTML nunca tuvo la intención de contener etiquetas para formatear una página web!
+        HTML fue creado para describir el contenido de una página web, como:
+    -->
+    <!--
+        Cuando se agregaron etiquetas como <font> y atributos de color a la especificación HTML 3.2, comenzó
+        una pesadilla para los desarrolladores web. El desarrollo de sitios web grandes, donde se agregaron
+        fuentes e información de color a cada página, se convirtió en un proceso largo y costoso.
+        ¡CSS eliminó el formato de estilo de la página HTML!
+    -->
+<body>
+    <!--el CSS hojas de estilo
+    1- forma inline (se usa dentro de las etiquetas html)
+    2- forma se usa  en el documento (head -> style)
+    3- forma documento aparte (pero tenemos que enlazarlo con html) (nombrearchivo.css)-->
+    <!--
+        DOS ATRIBUTOS ESCENCIALES QUE ESTAN EN TODAS LAS ETIQUETAS SON CLASS Y ID
+        se usan para hacer llamado a hojas de estilo o a JavaScript
+    -->
+    <!--
+        SELECTOR: pueder ser class id o elemento de html
+    -->
+    <!-- CREAR CLASS -->
+    <code id="codeUno" class="codeUno segundaclase terceraClase" style="color: #f5c345;""><!--esta etiqueta se utiliza para mostrar texto que debe ser interpretado como codigo informatico
+    yasea incluir eiquetas html, css, js otros lengajes.
+    es util para resaltar el codigo de un documento html y hacer que sea mas facil de leer y entender-->
+    <!--UNA EIQUETA DE HTML PUEDE CONTENER MAS DE UNA CLASE, SERIA POR JERARQUIA O EN CASCADA-->
+        CLASS<br>
+        <!--se utiliza el punto . nombreclass {atributo:valor;}-->
+        .nombreClass{
+            atributo:valor;
+            atributo:valor;
+        }
+    </code>
+
+    <code>ID
+        <!-- ID -->
+        <!-- se usa el numeral # nombreclass-->
+        #nombreClass{
+            atributo:valor;
+            atributo:valor
+        }
+    </code>
+
+    <!--SELECTOR DE ELEMNTO O ETIQUETA-->
+        <!--
+            Los selectores CSS se utilizan para "encontrar" (o seleccionar) los elementos HTML que desea diseñar.
+            Podemos dividir los selectores CSS en cinco categorías:
+                -Selectores simples (seleccione elementos basados en nombre, id, clase).
+                -Selectores combinados (seleccione elementos basados en una relación específica entre ellos).
+                -Selectores de Pseudo-Clases (seleccione elementos basados en un cierto estado).
+                -Selectores de pseudoelementos (seleccionar y diseñar una parte de un elemento).
+                -Selectores de atributos (seleccione elementos basados en un atributo o valor de atributo)
+        -->
+    <code>
+        SELECTOR DE EQIQUETA <!--El selector de elementos selecciona elementos HTML
+            en función del nombre del elemento.-->
+        etiquetahtml{
+            atributo:valor;
+            atributo:valor;
+        }
+    </code><br>
+
+    <!--CSS EN LINEA-->
+    <!--Se utiliza un CSS en línea para aplicar un estilo único a un único elemento HTML.
+        Un CSS en línea se utiliza directamente en el atributo de estilo de un elemento HTML-->
+    <h1 style="color:violet">etiqueta h1 con style</h1>
+    <p style="color:orangered;">cualquier contenido.......</p>
+    <!--LOS COLORES EN CSS
+        La propiedad de color de CSS define el color del texto que se utilizará
+        colores ingles..
+        Los colores se especifican utilizando nombres de color predefinidos o valores RGB, HEX, HSL, RGBA, HSLA.
+        colores en formato rgb (rojo, verde y azul); su forma va del rango 0 a 255 &nbsp;
+        color HEXADECIMAL (00 a F) # 
+        rgba (r, v, a alpha) 0 a 1 "opacidad"-->
+    <p style="color:rgb(255,0,0)">con rgb</p>
+    <p style="color: rgb(23,0,104)">con rgb</p>
+    <p style="color: #f5c345">colores hexadecimales</p><!--es el que mas se usa-->
+    <p style="color:rgba(255,75,7,0.8)">opacidad</p>
+
+    <!--LONGITUDES CSS-->
+        <!--ABSOLUTAS: son fijas y como se exprese es como va a aparecer
+            cm - mm - in (pulgadas) - px (pixeles) - pt (points) - pc (picas)-->
+    <p style="color:rgba(136, 8, 72, 0.8); font-size:2cm">color HEX opacidad y tamaño en cm</p>
+    <p style="color:rgba(92, 3, 45, 0.63); font-size:30px">color HEX opac y tamañ en px</p>
+    <p style="color:rgb(144,2,48); font-size:14pt">otro tamaño pt</p>
+    <p style="color:rgb(255,0,0); font-size:12pc">este es con pc "pica"</p>
+
+        <!--LONGITUDES RELATIVAS
+            em (tamaño de fuente en los elementos, se usa en el FONT-SIZE)
+            rem (font-size)
+               ***estas unidades ayudan a que el diseño sea mas escalable
+            ----------------
+            ex (hace referencia en funcion al X-HEIGHT)
+            -------------------------
+            vw (se ajusta en porcentanje en funcion WIDTH y VIEWPORT"longitud del ancho y largo")
+            vh (se ajusta en porcentaje en funcion de HIGHT y VIEWPORT)
+                ***estas dos unidades ayudan a que se ajuste mejor a la ventana ddel navegador
+            --------------------------    
+            %
+        -->
+    <p style="color:chocolate; font-size:4em">tamaño EM</p>
+        <!--La propiedad font-size CSS define el tamaño del texto que se utilizará.-->
+        <b>Negrita</b>
+    <p>
+        El dragón es un ser mitológico <b>fundamental de la cultura China</b> y muchos otros países orientales. 
+    </p>
+    <p id="p01">Yo soy diferente</p>
+        <!--Se usa para definir un estilo específico de un elemento en especial:
+            luego defina un estilo para el elemento con la identificación específica
+            #p01{color: ;}-->
+
+    <p class="codeUno">ejemlificacion</p>
+        <!--Para definir un estilo para tipos especiales de elementos, agregá un atributo class del elemento:
+            luego defina un estilo para los elementos con la clase específica
+            p.codeUno{color: ;}-->
+    <a href="https:\\wwww.gooogle.com" title="Click">enlace</a>
+    <a href="https:\\wwww.google.com" title="Click2">enlace dos</a>
+    <a href="https:\\www.google.com" title="Click3">enlace tres</a>
+
+    <ul>
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuatro</li>
+        <li>cinco</li>
+    </ul>
+    <br>
+    <input>
+</body>
+</html>

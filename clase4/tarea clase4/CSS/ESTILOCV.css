@@ -4,6 +4,7 @@
 }
 ul{
     list-style-type: none;
+    padding-left: 15px;
 }
 
 /*--------ASIDE-------------*/
@@ -16,20 +17,22 @@ aside{
 aside *{
     color:#D2E8E3;
 }
+aside p{
+    text-align:center
+}
 aside h2{/*aqui se colocaron los titulos en mayuscula*/
     text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height:unset;
+    letter-spacing: 10px;
 }
 aside section h2:first-child{
     border-bottom: 3px solid #D2E8E3;
 }
 #photocv img{
     float:inline-start;
-    margin: 5px;
-    width: 10em;
+    margin: 15px;
+    width: 15em;
     padding: 10px;
-    border-radius: 95px 95px 95px 95px;
+    border-radius: 98px;
 }
 /*----MAIN----*/
 main{
@@ -49,9 +52,11 @@ main section > h2{
     horizontal verticlar blur-radio spread-radius
     inset: la sobra va hacia adentro, sino se especifica nada la sombra va hacia afura**/
 }
+
+.hero h1,
 .hero h2{
     color: black;
-    border-top: 2px solid #D2E8E3;
+    text-align: center;
     text-transform: none;
     letter-spacing: normal;
 } 
@@ -61,4 +66,6 @@ section h3{
 section ul{
     list-style-type:unset;
 }
-
+section ul li {
+    padding-left: 15px;
+    }

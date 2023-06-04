@@ -1,6 +1,64 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    color:green;
+*{ /*todo documento*/
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style-type: none;
+}
+
+/*--------ASIDE-------------*/
+aside{
+    width: 30%;
+    background-color:#2C3532;
+    padding: 45px;
+    float: left;
+}
+aside *{
+    color:#D2E8E3;
+}
+aside h2{/*aqui se colocaron los titulos en mayuscula*/
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height:unset;
+}
+aside section h2:first-child{
+    border-bottom: 3px solid #D2E8E3;
+}
+#photocv img{
+    float:inline-start;
+    margin: 5px;
+    width: 10em;
+    padding: 10px;
+    border-radius: 95px 95px 95px 95px;
+}
+/*----MAIN----*/
+main{
+    margin: 0 auto;
+    width: 60%;
+    float: right;
+    padding: 16px;
+    background-color: #98ebd7;
+}
+main section > h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.hero{
+    background-color: #FFCB9A;
+    box-shadow: inset 3px 3px 30px 4px #D8B08C;/*sombreado
+    horizontal verticlar blur-radio spread-radius
+    inset: la sobra va hacia adentro, sino se especifica nada la sombra va hacia afura**/
+}
+.hero h2{
+    color: black;
+    border-top: 2px solid #D2E8E3;
+    text-transform: none;
+    letter-spacing: normal;
+} 
+section h3{
+    font-weight: bolder;
+}
+section ul{
+    list-style-type:unset;
 }
 

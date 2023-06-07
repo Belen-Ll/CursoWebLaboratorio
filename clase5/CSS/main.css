@@ -1,5 +1,9 @@
 @font-face{
     /*aqui estamos agregando fuentes personalizadas atravs de @font-ace*/
-    font-family: 'libreBaskerville-Bold";/*le indicamos en nombre de la fuente que vamos a usar'/
-    src:url(font/LibreBaskerville-Bold.ttf) ;/*la ruta de donde esta el archivo de fuente*/
+    font-family: 'LibreBaskerville-Bold';/*le indicamos en nombre de la fuente que vamos a usar*/
+    src:url(font/LibreBaskerville-Bold.ttf);/*la ruta de donde esta el archivo de fuente*/
+}
+
+body{
+    font-family: LibreBaskerville-Bold;
 }

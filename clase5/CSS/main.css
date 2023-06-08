@@ -52,8 +52,26 @@ a:hover{
 .alert{
     padding: 20px;
     margin-bottom: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .alert.warning{
     background-color: darkorange;
+    color: aqua;
 }
+.alert .btn{
+    float: right;
+    margin-left: 15;
+    color: antiquewhite;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.alert .btn:hover{
+   color:blueviolet
+}
+
+.alert.error{
+    background-color: firebrick;
+    color: azure;
+}
+

@@ -3,7 +3,57 @@
     font-family: 'LibreBaskerville-Bold';/*le indicamos en nombre de la fuente que vamos a usar*/
     src:url(font/LibreBaskerville-Bold.ttf);/*la ruta de donde esta el archivo de fuente*/
 }
+@font-face{
+    font-family: 'LibreBaskerville';
+    src: url(font/LibreBaskerville-Italic.ttf);
+}
 
 body{
-    font-family: LibreBaskerville-Bold;
+    font-family: "LibreBaskerville-Bold";
+}
+H1{
+    font-family: "libreBaskerville";
+}
+.card-profile{
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+.title{
+    color:gray;
+    font-size: 10px;
+}
+button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size:20px;
+    cursor:pointer;
+    background-color: black;
+    color: wheat;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+}
+button:hover,
+a:hover{
+    opacity: 0.7;
+}
+
+.card-profile img{
+    width: 100%;
+    background-color: bisque;
+/*la imagen que se uso no tien fonde transprente* por lo cual el cambio de fondo no se nota*/
+}
+
+.alert{
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.alert.warning{
+    background-color: darkorange;
 }

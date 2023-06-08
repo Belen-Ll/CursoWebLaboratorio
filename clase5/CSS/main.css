@@ -75,3 +75,8 @@ a:hover{
     color: azure;
 }
 
+.alert.sucess{
+    background-color: chartreuse;
+    color: black;
+}
+

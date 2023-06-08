@@ -49,6 +49,7 @@ a:hover{
 /*la imagen que se uso no tien fonde transprente* por lo cual el cambio de fondo no se nota*/
 }
 
+/*TIPOS DE ALERTA*/
 .alert{
     padding: 20px;
     margin-bottom: 15px;

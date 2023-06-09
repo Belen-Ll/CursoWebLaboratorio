@@ -86,4 +86,7 @@ cuando éste se produce debido a la navegación o a APIs CSSOM. Otros desplazami
 p.ej. aquellos realizados por el usuario, no se ven afectados por esta propiedad.
 Cuando esta propiedad está especificada en el elemento raíz, se aplica al viewport.*/
 
+.scroll{
+    overflow: scroll;
+}
 

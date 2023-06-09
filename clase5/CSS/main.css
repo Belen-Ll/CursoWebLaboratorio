@@ -101,34 +101,66 @@ a:hover{
 ::-webkit-scrollbar-track{/*para agregarle un color color*/
     background-color: orange;
 }
-::-webkit-scrollbar-thumb{ /*le coloca un color al scroll*/
+.scroll::-webkit-scrollbar-thumb{ /*le coloca un color al scroll*/
     background-color: rgb(207, 247, 26);
     border-radius: 20px;
     border: 2px solid rgb(128, 0, 53);
 }
 
-/*TIPOS DE BORDE*/
+/*TIPOS DE LINEA
+    trabaja sobre la linea que es una capa antes del borde
+*/
+p{
+    outline-color: darkcyan;
+    border: 2px solid;
+}
 p.dotted{
+    outline-width: 6px;/*tamaño o grosor*/
     outline-style: dotted;
+    border: 2px solid;
 }
 p.dashed{
+    outline-width: 6px;
     outline-style: dashed;
+    outline-color: blueviolet;
 }
 p.solid{
+    outline-width:6px;
     outline-style: solid;
 }
 p.double{
+    outline-width: 6px;
     outline-style: double;
+    outline-color:deeppink;
 }
 p.groove{
+    outline-width: 6px;
     outline-style: groove;
+    outline-color:khaki;
 }
 p.ridge{
+    outline-width: 6px;
     outline-style: ridge;
+    outline-color:paleturquoise;
 }
 p.inset{
+    outline-width: 6px;
     outline-style: inset;
+    outline-color:lightsalmon;
 }
-p.ouset{
+p.outset{
+    outline-width: 6px;
     outline-style:outset;
+    outline-color: cornflowerblue;
+}
+
+.conic{
+    background-image: conic-gradient(red, yellow, green, blue, black);
+        /*propiedades to right bottom - los colores los va colocando en degrade
+         180deg (grados) radial, conic, lineal
+        */
+       /* background-repeat: repeat-y; la forma en que va a ser distibuida
+            no repeat repeat-x repeat-y*/
+        min-width: 50%;
+        height: 100vh;
 }

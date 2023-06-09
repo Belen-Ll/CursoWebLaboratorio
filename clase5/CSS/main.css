@@ -88,5 +88,11 @@ a:hover{
         se debe ocultar una para visualizar otro
             */
     height: 200px; /*para el lateral*/
-    width: 100px;
+   /*width: 100px;*/
+}
+::-webkit-scrollbar{/*tamaño*/
+    width: 12px;
+}
+::-webkit-scrollbar-track{/*para el color*/
+    background-color: orange;
 }

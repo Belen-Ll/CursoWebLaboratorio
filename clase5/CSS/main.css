@@ -102,5 +102,7 @@ a:hover{
     background-color: orange;
 }
 ::-webkit-scrollbar-thumb{ /*le coloca un color al scroll*/
-    background-color: brown;
+    background-color: rgb(207, 247, 26);
+    border-radius: 20px;
+    border: 2px solid rgb(128, 0, 53);
 }

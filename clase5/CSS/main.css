@@ -164,3 +164,10 @@ p.outset{
         min-width: 50%;
         height: 100vh;
 }
+
+.fondoimg{
+    background-image: url(../CSS/imagen/fondo.jpg);
+    height: 150vh;
+    background-repeat: no-repeat;
+
+}

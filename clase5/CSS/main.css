@@ -106,3 +106,29 @@ a:hover{
     border-radius: 20px;
     border: 2px solid rgb(128, 0, 53);
 }
+
+/*TIPOS DE BORDE*/
+p.dotted{
+    outline-style: dotted;
+}
+p.dashed{
+    outline-style: dashed;
+}
+p.solid{
+    outline-style: solid;
+}
+p.double{
+    outline-style: double;
+}
+p.groove{
+    outline-style: groove;
+}
+p.ridge{
+    outline-style: ridge;
+}
+p.inset{
+    outline-style: inset;
+}
+p.ouset{
+    outline-style:outset;
+}

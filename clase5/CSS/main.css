@@ -75,6 +75,11 @@ a:hover{
     background-color: firebrick;
     color: azure;
 }
+.alert.success{
+    background-color: chartreuse;
+    color: black;
+}
+
 
 /*SCROLL
     La propiedad CSS scroll-behavior especifica el comportamiento del desplazamiento para un elemento con desplazamiento, cuando éste se produce debido a la navegación o a APIs CSSOM. Otros desplazamientos,
@@ -93,6 +98,9 @@ a:hover{
 ::-webkit-scrollbar{/*tamaño*/
     width: 12px;
 }
-::-webkit-scrollbar-track{/*para el color*/
+::-webkit-scrollbar-track{/*para agregarle un color color*/
     background-color: orange;
+}
+::-webkit-scrollbar-thumb{ /*le coloca un color al scroll*/
+    background-color: brown;
 }

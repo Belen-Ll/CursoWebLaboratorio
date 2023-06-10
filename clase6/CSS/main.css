@@ -35,12 +35,17 @@ header nav{
 }
 .menuheader li a{
     text-decoration: none;
-    padding: 20px;
+    padding: 30px;
     display: inline-block;
     color: #42252a;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 .menuheader li a:hover{
     color: #fcffff;
+}
+
+main{
+    width: 70%;
+    background-color: #f4c8ac;
 }

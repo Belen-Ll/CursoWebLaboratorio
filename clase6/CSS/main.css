@@ -16,7 +16,7 @@ body{
 header{
     width: 100%;
     height: 200px;
-    background-color:plum;
+    background-color:#42252a;
     margin: 0px;
 }
 header img{
@@ -31,4 +31,16 @@ header nav{
 }
 .menuheader li{
     float: left;
+    margin-top: 70px;
+}
+.menuheader li a{
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: #e5894e;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menuheader li a:hover{
+    color: #fcffff;
 }

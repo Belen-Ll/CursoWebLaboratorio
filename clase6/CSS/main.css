@@ -26,3 +26,9 @@ header img{
 header nav{
     font-family: 'Assistant';
 }
+.menuheader ul{
+    list-style-type: none;
+}
+.menuheader li{
+    float: left;
+}

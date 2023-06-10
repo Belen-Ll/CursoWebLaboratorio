@@ -15,11 +15,13 @@ body{
 }
 header{
     width: 100%;
-    height: 70px;
+    height: 200px;
     background-color:plum;
+    margin: 0px;
 }
-.logo{
-    background-color: plum;
+header img{
+    max-width: 90px;
+    float: left;
 }
 header nav{
     font-family: 'Assistant';

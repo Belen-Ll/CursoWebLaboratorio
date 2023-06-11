@@ -47,6 +47,7 @@ header nav{
 
 main{
     width: 70%;
+    clear: both;
     background-color: #f4c8ac;
 }
 section{
@@ -57,7 +58,9 @@ section .card-product{
     border: 5px solid #42252a;
     border-radius: 20px;
     background-color:#fcffff;
-    padding: 10px;
+    padding-top: 10px;
+    /*float: left;*/
+
 }
 section .card-product img{
     max-width: 100%; /*ajusta al tamañp que se le dio con el max-width en .sectiion .card-product*/
@@ -78,4 +81,23 @@ section .card-product .precio{
     color: #fb0365;
     font-weight: bold;
     letter-spacing: 1px;
+    padding-bottom: 10px; /*para que no quede pegado al precio*/
+}
+section .card-product-footer{
+    width: 100%;
+    background-color: #e5894e;
+    height: 30px;
+    border-radius: 0px 0px 15px 15px;
+    /*padding: 3px;*/
+}
+section .card-product-footer button{
+    width: 50%;
+    float: left;
+    height: 30px;
+    border-radius: 0px 0px 15px 15px;
+    border: none;
+    background-color: #e5894e;
+    /*color:black;*/
+    cursor:pointer;
+
 }

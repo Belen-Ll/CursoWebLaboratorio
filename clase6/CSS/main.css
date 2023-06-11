@@ -8,7 +8,8 @@ font-family: 'Work Sans', sans-serif;
 *{
    margin: 0px; 
    padding: 0px;
-   box-sizing: border-box;
+   box-sizing: border-box; /*define el tamaño de la caja, los elemntos dentro de la caja
+    calcula lo que se establece para cada elemento*/
 }
 body{
     font-family: 'Poppins';
@@ -53,6 +54,7 @@ main{
     clear: both;
     background-color: #f4c8ac;
     float: left;
+    height: 100vh;
 }
 section{
     padding: 20px; 
@@ -109,7 +111,8 @@ aside{
     width: 30%;
     background-color: aquamarine;
     padding: 20px;
-    float: left;
+    float: left; /*si no se coloca,, se baja*/
+    height: 100vh; /*el vh es para vertical y horizontal*/
 }
 aside section nav ul{
     list-style: none;

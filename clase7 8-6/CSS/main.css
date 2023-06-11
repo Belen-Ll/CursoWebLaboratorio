@@ -56,6 +56,22 @@ main{
     float: left;
     height: 100vh;
 }
+.scroll{
+    overflow-x: scroll;
+    height: 600px;
+}
+main::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background-color: #42252a;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #f4c8ac;
+    border-radius: 15px;
+    border: 3px solid #e5894e;
+}
+
 section{
     padding: 20px; 
 }

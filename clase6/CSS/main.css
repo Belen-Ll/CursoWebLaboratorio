@@ -50,5 +50,9 @@ main{
     background-color: #f4c8ac;
 }
 section .card-product{
-    width: 50%;
+    max-width: 50%;
 }
+section .card-product img{
+    max-width: 100%;
+    border: 7px solid #42252a;
+} 

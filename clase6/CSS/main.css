@@ -13,6 +13,8 @@ font-family: 'Work Sans', sans-serif;
 body{
     font-family: 'Poppins';
 }
+
+/*HEADER- donde ira el logo y el manu*/
 header{
     width: 100%;
     height: 200px;
@@ -45,6 +47,7 @@ header nav{
     color: #fcffff;
 }
 
+/*MAIN - secion de los productos*/
 main{
     width: 70%;
     clear: both;
@@ -60,7 +63,6 @@ section .card-product{
     background-color:#fcffff;
     padding-top: 10px;
     /*float: left;*/
-
 }
 section .card-product img{
     max-width: 100%; /*ajusta al tamañp que se le dio con el max-width en .sectiion .card-product*/
@@ -99,5 +101,14 @@ section .card-product-footer button{
     background-color: #e5894e;
     /*color:black;*/
     cursor:pointer;
+}
 
+/*ASIDE - manu lateral formulario*/
+aside{
+    width: 30%;
+    background-color: aquamarine;
+    padding: 20px;
+}
+aside section nav ul{
+    list-style: none;
 }

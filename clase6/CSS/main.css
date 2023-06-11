@@ -41,11 +41,14 @@ header nav{
     font-weight: bold;
     font-size: 20px;
 }
-.menuheader li a:hover{
+.menuheader li a:hover{/*seudoclass*/
     color: #fcffff;
 }
 
 main{
     width: 70%;
     background-color: #f4c8ac;
+}
+section .card-product{
+
 }

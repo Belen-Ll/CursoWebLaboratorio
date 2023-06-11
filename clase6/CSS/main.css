@@ -52,6 +52,7 @@ main{
     width: 70%;
     clear: both;
     background-color: #f4c8ac;
+    float: left;
 }
 section{
     padding: 20px; 
@@ -108,6 +109,7 @@ aside{
     width: 30%;
     background-color: aquamarine;
     padding: 20px;
+    float: left;
 }
 aside section nav ul{
     list-style: none;
@@ -164,11 +166,23 @@ aside .form button{
 
 /*FOOTER*/
 footer{
+    clear: both;
     padding: 60px;
     background-color:#42252a;
     color:#fcffff;
 }
 footer div{
     width: 50%;
+}
+footer .one{
     float: left;
+}
+footer .two{
+    float: right;
+    text-align: right;
+}
+footer .two a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: #fcffff;
 }

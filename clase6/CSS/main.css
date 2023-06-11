@@ -49,10 +49,33 @@ main{
     width: 70%;
     background-color: #f4c8ac;
 }
+section{
+    padding: 20px; 
+}
 section .card-product{
-    max-width: 50%;
+    max-width: 30%;
+    border: 5px solid #42252a;
+    border-radius: 20px;
+    background-color:#fcffff;
+    padding: 10px;
 }
 section .card-product img{
-    max-width: 100%;
-    border: 7px solid #42252a;
-} 
+    max-width: 100%; /*ajusta al tamañp que se le dio con el max-width en .sectiion .card-product*/
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 2px solid #e5894e;
+}
+section .card-product .description{
+    text-align: center;
+    line-height: 200%;
+    letter-spacing: 5px;
+    font-family: 'Poppins';
+    color: #42252a;
+    font-weight: bold;
+}
+section .card-product .precio{
+    text-align: right;
+    font-size: 14px;
+    color: #fb0365;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

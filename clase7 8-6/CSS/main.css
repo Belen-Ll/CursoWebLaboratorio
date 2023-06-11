@@ -109,7 +109,7 @@ section .card-product-footer button{
 /*ASIDE - manu lateral formulario*/
 aside{
     width: 30%;
-    background-color: aquamarine;
+    background-color: #6fbaae;
     padding: 20px;
     float: right; /*si no se coloca,, se baja*/
     height: 100vh; /*el vh es para vertical y horizontal*/
@@ -121,7 +121,7 @@ aside section nav ul{
 }
 aside section nav li{
     margin-bottom: 10px;
-    border-bottom: 1px solid #fb0365;
+    border-bottom: 1px solid #42252a;
 }
 aside section nav a{
     text-decoration: none;
@@ -129,15 +129,15 @@ aside section nav a{
     padding-bottom: 10px; 
 }
 aside section nav li:hover{
-    border-bottom: 1px solid green;
-    color:#fb0365;
+    border-bottom: 1px solid #fcffff;
+    color:#fcffff;
 }
 aside section nav a:hover{
-    color:#fb0365;
+    color:#fcffff;
 }
 aside .form{
     width: 100%;
-    border: 1px solid red;
+    border: 1px solid #42252a;
     border-radius: 10px;
     padding: 5px;;
 }
@@ -162,7 +162,7 @@ aside .form button{
     width: 100%;
     height: 40px;
     cursor: pointer;
-    background-color: blueviolet;
+    background-color: #fb0365;
     color:white;
     border-radius: 10px;
 }

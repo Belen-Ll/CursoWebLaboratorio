@@ -114,7 +114,7 @@ aside section nav ul{
     margin: 0px;
     padding: 0px;
 }
-aside section nav ul li{
+aside section nav li{
     margin-bottom: 10px;
     border-bottom: 1px solid #fb0365;
 }
@@ -124,6 +124,9 @@ aside section nav a{
     padding-bottom: 10px; 
 }
 aside section nav li:hover{
-    border-bottom: 1px solid #fb0365;
-    color:#fcffff;
+    border-bottom: 1px solid green;
+    color:#fb0365;
+}
+aside section nav a:hover{
+    color:#fb0365;
 }

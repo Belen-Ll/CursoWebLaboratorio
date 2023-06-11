@@ -111,4 +111,19 @@ aside{
 }
 aside section nav ul{
     list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+aside section nav ul li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fb0365;
+}
+aside section nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px; 
+}
+aside section nav li:hover{
+    border-bottom: 1px solid #fb0365;
+    color:#42252a;
 }

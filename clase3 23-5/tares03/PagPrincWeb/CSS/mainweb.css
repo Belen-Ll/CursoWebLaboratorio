@@ -7,24 +7,40 @@ header{
     height: 70px;
     background-color: black;
 }
+
+header nav ul li{
+    list-style-type: none;
+    float:left;
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 25pt;
+}
+header nav ul li a:hover{
+    background-color: orange;
+    color: green;
+}
+
 main{
-    padding: 350px;
+    height: 100vh;  
     background-image: url(./imagen1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 main h1,
-main p
-    {
-        margin-bottom: 15px;
-        text-align: left;
-        line-height: 100%;
-        vertical-align:text-top;
-        font-size: 45pt;
-    }
+main p{
+    font-size: 25pt;
+    color: wheat;
+    -webkit-text-stroke: 1px black;
+}
 footer{
     padding: 20px;
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 20pt;
 }
+

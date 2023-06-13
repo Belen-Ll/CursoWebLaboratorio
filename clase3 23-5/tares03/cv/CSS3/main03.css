@@ -1,0 +1,50 @@
+#inicio{
+    background-color:darkseagreen;
+}
+#inicio img{
+    width: 200px;
+    height: 200px;
+}
+section .title1{
+    background-color: darkslategrey;
+    color:black;
+    text-align: center;
+    font-size: 80px;
+}
+
+#presentacion h2{
+    background-color:darkslategrey;
+    color: aliceblue;
+    font-size: 70px;
+}
+#presentacion p{
+    background-color: darkseagreen;
+    font-size: 50px;
+}
+
+#habilidades h2{
+    background-color: darkslategray;
+    color: aliceblue;
+    font-size: 70px;
+}
+#habilidades ul{
+    background-color: darkseagreen;
+    color: darkolivegreen;
+}
+#habilidades ul li{
+    margin: 20px;
+    list-style: none;
+    font-size: 50px;
+}
+
+
+.enlaces{
+    text-align: right;
+    font-size: 20px;
+}
+footer{
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}

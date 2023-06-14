@@ -39,6 +39,22 @@ main .text{
     background-color: burlywood;
     font-size: 2em;
 }
+/*
+Método position absolute
+Esta técnica permite establecer la ubicación del texto en cualquier parte de su contenedor. 
+En nuestro caso, como deseamos centrarlo, 
+    - primero establecemos el eje superior izquierdo de nuestro texto
+    en el centro de tu contenedor con las propiedades top y left al 50%
+    y finalmente lo desplazamos con la propiedad transform un 50% a la izquierda
+    y hacia arriba para que acabe centrado respecto a su contenedor.
+
+Al establecer la posición absoluta, estamos eliminando el elemento del flujo de la página,
+por lo que es importante tener en cuenta de que mal usada, esta técnica puede provocar
+la sobreposición de elementos de manera no deseada.
+*/
+
+
+
 footer{
     padding: 10px;
     background-color: black;

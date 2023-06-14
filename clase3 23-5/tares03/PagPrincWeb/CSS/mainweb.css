@@ -9,14 +9,14 @@ header{
 }
 
 header nav ul li{
-    list-style-type: none;
+    list-style-type: none;/**se quitan las viñetas*/
     float:left;
 }
 header nav ul li a{
     padding: 15px;
     display: inline-block;
-    text-decoration: none;
-    color: aliceblue;
+    text-decoration: none;/**se quita el subrayado de enlace*/
+    color: aliceblue; /*se cambia el color azul que tienen por defecto los enlaces*/
 }
 header nav ul li a:hover{
     background-color: orange;
@@ -26,9 +26,9 @@ header nav ul li a:hover{
 main{
     max-width: 100%;
     height: 500px;
-    background-image: url(./imagen1.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-image: url(./imagen1.jpg);/*se agrega una imagen como fondo*/
+    background-size:cover; /*que cubra todo*/
+    background-repeat: no-repeat; /*que no se repita, si fuese el caso de que laimagen sea mas chica*/
 }
 main .text{
     text-align: center;

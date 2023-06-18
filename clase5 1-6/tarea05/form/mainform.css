@@ -1,0 +1,28 @@
+
+.form1{
+    background-color:darkgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 90%;
+    padding: 20px;
+    margin: 40px;
+}
+.form1 input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.form1 select{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+button{
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+}

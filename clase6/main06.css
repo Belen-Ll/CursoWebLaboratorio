@@ -1,0 +1,12 @@
+p:hover{
+    color: red !important; /*se salta la validacion*/
+}
+p:first-child{ /*hace referencia al primer elemento*/
+    color:blue;
+}
+
+/*FOCUS: es para cuando se selecciona el INPUT*/
+input:focus{
+    background-color: black;
+    color: aliceblue;
+}

@@ -1,3 +1,4 @@
+/*SEUDO CLASES : */
 p:hover{
     color: red !important; /*se salta la validacion*/
 }
@@ -5,8 +6,48 @@ p:first-child{ /*hace referencia al primer elemento*/
     color:blue;
 }
 
-/*FOCUS: es para cuando se selecciona el INPUT*/
+/*FOCUS: es para cuando se selecciona el INPUT
+    cuando se selecciona la caja de texto
+    APLICA TODO SOLO CUANDO ESTAS DENTRO DE LA CAJ
+*/
 input:focus{
     background-color: black;
     color: aliceblue;
+}
+input:invalid{/*elementos de valor no valido*/
+    color: red;
+}
+p:last-child{/*el ultimo elemneto*/
+    color: green;
+}
+p:nth-child(3){ /*nth-child, se seleccion el elemnto () que se le indique entre los parentesis
+    siempre y cuando este en la lista de los elemntos*/
+    background-color:darkseagreen;
+}
+/*ENLLACES*/
+a:link{ /*enlace no visitado*/
+    color: #FF0000;
+}
+a:visited{ /*enlace visitado*/
+    color: #00FF00;
+}
+a:hover{ /*cuando se posiciona con el mouse*/
+    color: #FF00FF;
+}
+a:active{ /*cuando se cliquea/se preciona sobre el enlace*/
+    color: #0000FF;
+}
+
+/*PSEUDO ELEMENTOS :: */
+p::first-line{ /*la primer linea del elemnto que se le indico*/
+    font-size: 30px;
+}
+p::first-letter{ /*la primer letra de cada parafo*/
+    color: orangered;
+}
+p::after{ /*despues*/
+    content: "a ->";
+}
+p::before{ /*antes*/
+    content: "c:->";
 }

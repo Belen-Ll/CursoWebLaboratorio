@@ -74,7 +74,7 @@ main{
 }
 
 section{
-    padding: 20px; 
+    padding: 20px;
 }
 section .card-product{
     max-width: 30%;
@@ -88,8 +88,8 @@ section .card-product{
 section .card-product img{
     max-width: 100%; /*ajusta al tamañp que se le dio con el max-width en .sectiion .card-product*/
     border-radius: 20px 20px 0px 0px;
-    border-bottom: 2px solid #e5894e;
-    object-fit: cover;
+    border-bottom: 1px solid #e5894e;
+    
 }
 section .card-product .description{
     text-align: center;

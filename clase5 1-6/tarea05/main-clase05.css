@@ -1,0 +1,21 @@
+.position{
+    margin-bottom: 80px;
+    
+    
+}
+#colorUno{
+    background-color: coral;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 30%;
+    margin-top: -15px;
+}
+#colorDos{
+    background-color:darkolivegreen;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}

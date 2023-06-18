@@ -1,0 +1,17 @@
+.contenedor1{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+#colorUno{
+    background-color:cyan;
+    width: 400px;
+    height: 400px;
+    border: 2px solid;
+}
+#colorDos{
+    background-color:cyan;;
+    width: 400px;
+    height: 400px;
+    border: 2px solid;
+}

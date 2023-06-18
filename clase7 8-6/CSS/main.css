@@ -57,16 +57,17 @@ main{
     height: 100vh;
 }
 .scroll{
-    overflow-x: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     height: 600px;
 }
-main::-webkit-scrollbar{
+::-webkit-scrollbar{ /*tamaño*/
     width: 12px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track{ /*agrega un color*/
     background-color: #42252a;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{ 
     background-color: #f4c8ac;
     border-radius: 15px;
     border: 3px solid #fb0365;

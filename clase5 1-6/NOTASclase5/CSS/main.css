@@ -166,10 +166,10 @@ p.outset{
 }
 
 .fondoimg{
-    background-image: url(../CSS/imagen/fondo.jpg);
+    background-image: url(../CSS/imagen/fondo.jpg); /*se pone una imagen de fondo*/
     height: 150vh;
-    width: 40vh;
+    width: 45vh;
     background-repeat: no-repeat;
-    background-image: cover;
+    background-size: cover; /* para que se ajuste al contenido containt*/
 
 }

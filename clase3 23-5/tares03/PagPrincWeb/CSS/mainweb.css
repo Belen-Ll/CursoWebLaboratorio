@@ -41,6 +41,7 @@ main .text{
 }
 /*
 Método position absolute
+
 Esta técnica permite establecer la ubicación del texto en cualquier parte de su contenedor. 
 En nuestro caso, como deseamos centrarlo, 
     - primero establecemos el eje superior izquierdo de nuestro texto

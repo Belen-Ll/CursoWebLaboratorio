@@ -119,14 +119,32 @@ div.background::after{
 }
 
 .divp{
-    position:relative;
+    position: relative;
     min-width: 300px;
-    min-width: 400px;
+    min-height: 400px;
     background-color: red;
 }
 .divp .div{
     position: absolute;
     top: 0px;
     left: 0px;
-
+    font-size: 30px;
 }
+.divp .div.a{
+    background-color:cornflowerblue;
+    z-index: 3;
+    width: 80px;
+}
+.divp .div.b{
+    left: 50px;
+    background-color: coral;
+    z-index: 3;
+    width: 100px;
+}
+.divp .div.c{
+    left: 100px;
+    background-color: greenyellow;
+    z-index: 4;
+    width: 100px;
+}
+

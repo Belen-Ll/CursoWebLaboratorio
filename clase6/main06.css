@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
 /*SEUDO CLASES : */
 p:hover{
     color: red !important; /*se salta la validacion*/
@@ -50,4 +56,77 @@ p::after{ /*despues*/
 }
 p::before{ /*antes*/
     content: "c:->";
+}
+
+
+.round{
+    /*position: absolute;
+    width: 262px;
+    height: 76px;
+    left: 226px;
+    top: 8px;*/
+    min-height: 262px;
+    min-height: 76px;
+    background: #212828;
+    border-radius: 20px;
+    box-shadow: inset 20px 4px 4px rgba(230, 25, 25, 0.96);
+}
+
+
+div.background{
+    background: url(./img1.jpg);
+    border: 3px solid yellow;
+    /*opacity: 0.6;*/
+    position: relative;
+    z-index: 1; /*SOBREPOSICIONAMIENTO DE LAS CAPAS
+        le indico cual va primero y cual va segunda*/
+}
+div.transbox{
+    margin: 30px;
+    background-color: rgba(255,255,255,0.6);
+    /*opacity: 0.6;*/
+    z-index: 2;
+    position: relative;
+}
+div.transbox small{
+    margin:5px;
+    font-weight: bold;
+    /*color: black;*/
+    color: white;
+}
+
+
+/*div.background::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0,6);
+}*/
+div.background::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0,6);
+}
+
+.fixed{
+    position: fixed;
+    background-color: black;
+    top: 0px;
+}
+
+.divp{
+    position:relative;
+    min-width: 300px;
+    min-width: 400px;
+    background-color: red;
+}
+.divp .div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
 }

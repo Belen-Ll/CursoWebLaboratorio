@@ -6,12 +6,43 @@
 }
 
 /*
-    adding controla el espacio dentro de un elemento, 
+    padding controla el espacio dentro de un elemento, 
     margin controla el espacio alrededor del elemento, 
     width define el ancho del contenido del elemento
     height define la altura del contenido del elemento.
 */
 
+
+/*
+    padding:
+    padding es la propiedad que define el espacio entre el contenido de un elemento y su borde.
+    Puedes establecer valores de padding para los cuatro lados (arriba, derecha, abajo, izquierda) de un elemento,
+    utilizando las siguientes propiedades: padding-top, padding-right, padding-bottom y padding-left.
+    El padding aumenta el tamaño del elemento desde su contenido hacia el borde.
+
+    margin:
+    margin es la propiedad que define el espacio alrededor de un elemento, es decir,
+    el espacio entre un elemento y los elementos circundantes.
+    Puedes establecer valores de margin para los cuatro lados de un elemento,
+    utilizando las siguientes propiedades: margin-top, margin-right, margin-bottom y margin-left.
+    El margin no afecta el tamaño real del elemento, sino el espacio que lo rodea.
+
+    width:
+    width es la propiedad que define el ancho de un elemento.
+    Puedes establecer el valor de width utilizando unidades de medida como píxeles (px), porcentaje (%), em (em), entre otras.
+    La propiedad width define el ancho del contenido del elemento, sin incluir el padding, el border o el margin.
+
+    height:
+    height es la propiedad que define la altura de un elemento.
+    Al igual que width, puedes establecer el valor de height utilizando unidades de medida
+    como píxeles (px), porcentaje (%), em (em), entre otras.
+    La propiedad height define la altura del contenido del elemento, sin incluir el padding, el border o el margin.
+
+    Es importante recordar que estos conceptos interactúan entre sí y pueden afectar el diseño general de una página web.
+    Al establecer valores de padding o margin, es posible que debas considerar
+cómo afectarán el tamaño y la posición de los elementos en relación con otros elementos cercanos.
+
+*/
 
 
 body{

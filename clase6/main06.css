@@ -116,10 +116,11 @@ div.background::after{
     position: fixed;
     background-color: black;
     top: 0px;
+    z-index: 999;
 }
 
 .divp{
-    position: relative;
+    position: relative; /*la posicion que tiene el elemento*/
     min-width: 300px;
     min-height: 400px;
     background-color: red;
@@ -148,3 +149,22 @@ div.background::after{
     width: 100px;
 }
 
+.posicion{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border: 2px dashed black;
+}
+
+.posicion .dip{
+    position: absolute;
+    font-size: 30px;
+    width: 120px;
+    height: 50px;
+}
+
+.posicion .dip.d{
+    background-color: blue;
+    z-index: 1;
+    width: 100px;
+}

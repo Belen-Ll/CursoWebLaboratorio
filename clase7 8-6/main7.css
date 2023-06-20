@@ -152,8 +152,20 @@
 
 .trans{
     width: 100px !important;
-    transition: width 2s;
+    height: 100px !important;
+    transition: width 2s, heigth 4s, transform 6s;
+        /*se le da una transicion al width y heigth*/
+    transition-timing-function: linear;
+        /*
+            linear
+            ease
+        */
 }
 .trans:hover{
     width: 300px !important;
+    height: 300px !important;
+    transform: rotate(180deg);
 }
+
+
+

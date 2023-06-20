@@ -149,22 +149,62 @@ div.background::after{
     width: 100px;
 }
 
+
 .posicion{
     position: relative;
     width: 500px;
     height: 200px;
     border: 2px dashed black;
 }
-
 .posicion .dip{
     position: absolute;
     font-size: 30px;
     width: 120px;
     height: 50px;
 }
-
 .posicion .dip.d{
     background-color: blue;
+    bottom: 0;
+    right: 0;
+    /*
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+    */
     z-index: 1;
-    width: 100px;
 }
+.posicion .dip.d-1{
+    background-color:chocolate;
+    bottom: 40px;
+    right: 15%;
+    z-index: 2;
+}
+.posicion .dip.e{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.posicion .dip.f{
+    background-color: #00FF00;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.posicion .dip.g{
+    background-color: violet;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+.posicion .dip.h{
+    background-color: coral;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+

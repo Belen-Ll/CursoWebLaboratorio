@@ -167,5 +167,26 @@
     transform: rotate(180deg);
 }
 
+/*KEYFRAME: creacion de animaciones*/
+@keyframes anime{ /*se escribe el nombre de la animacion que uno elija*/
+    /*from{ background-color: red;}
+    to {background-color: green;}*/
+    0%{ background-color: red; color: white; left: 0; top: 0;}
+    20% {background-color: green; color: white; left: 200px; top: 0;}
+    30%{ background-color:yellow; color: black; left: 0; top: 200px;}
+    50%{ background-color:blue; color: white; left: 0; top: 200px;}
+    100%{background-color:darkmagenta; color: white; left: 0; top: 0;}
+}
+.animacion{
+    position: relative;
 
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: 4; /*lo va repetir*/
+}
 
+/*.animacion:hover{
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-duration: 10s;
+}*/

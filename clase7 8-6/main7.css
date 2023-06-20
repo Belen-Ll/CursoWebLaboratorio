@@ -130,8 +130,30 @@
     margin: 30px;
 }
 
-/*TRANSFORMACION DE ELEMENTO*/
+/*TRANSFORMACION 2D DE ELEMENTO*/
 
 .rotate{
     transform: rotate(20deg); /*en sentido horario dependiendo el grado que se le de*/
+}
+.scale{
+    transform: scale(3,5); /*anchura - altura*/
+}
+.skewX{
+    transform: skewX(20deg);
+}
+.skewY{
+    transform: skewY(20deg);
+}
+.skew{
+    transform: skew(5deg,7deg);
+}
+
+/*TRANSICION, es un tipo de animacion o efecto sobre el elemento*/
+
+.trans{
+    width: 100px !important;
+    transition: width 2s;
+}
+.trans:hover{
+    width: 300px !important;
 }

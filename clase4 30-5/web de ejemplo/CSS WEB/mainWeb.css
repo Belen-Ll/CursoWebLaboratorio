@@ -44,6 +44,41 @@ cómo afectarán el tamaño y la posición de los elementos en relación con otr
 
 */
 
+/*
+pautas generales para ayudarte a entender cuándo aplicar cada propiedad:
+
+padding:
+Utiliza padding cuando desees agregar espacio entre el contenido de un elemento y su borde.
+Puedes usar padding para aumentar el espacio interno de un elemento, como un contenedor,
+un párrafo o una caja de texto.
+Es útil cuando deseas que el contenido tenga un espacio de separación del borde
+para mejorar la legibilidad o el diseño visual.
+
+margin:
+Utiliza margin cuando desees agregar espacio alrededor de un elemento,
+creando separación entre ese elemento y otros elementos circundantes.
+Puedes usar margin para controlar la distribución y el espaciado entre elementos,
+como bloques de contenido, imágenes o secciones.
+Es útil para crear márgenes entre elementos contiguos, 
+establecer espacios entre secciones de la página o controlar la alineación visual.
+
+width:
+Utiliza width para establecer el ancho del contenido de un elemento.
+Puedes usar width para ajustar y controlar la dimensión horizontal de elementos como cajas,
+imágenes, columnas o barras de navegación.
+Es útil para lograr un diseño consistente y predecible en términos de ancho de los elementos.
+
+height:
+Utiliza height para establecer la altura del contenido de un elemento.
+Puedes usar height para controlar la dimensión vertical de elementos como imágenes,
+secciones o elementos con desplazamiento.
+Es útil para asegurarte de que los elementos tengan una altura específica
+y se ajusten correctamente en relación con otros elementos.
+
+Recuerda que estas pautas son generales y pueden variar según tus necesidades específicas.
+Al diseñar tu página web, es importante experimentar y probar diferentes combinaciones
+y ajustes de padding, margin, width y height para lograr el aspecto y la funcionalidad deseados.
+*/
 
 body{
     background-color: #e5f744; /*color de fondo*/

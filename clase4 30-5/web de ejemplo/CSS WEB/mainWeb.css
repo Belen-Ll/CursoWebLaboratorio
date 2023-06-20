@@ -18,6 +18,8 @@
     padding es la propiedad que define el espacio entre el contenido de un elemento y su borde.
     Puedes establecer valores de padding para los cuatro lados (arriba, derecha, abajo, izquierda) de un elemento,
     utilizando las siguientes propiedades: padding-top, padding-right, padding-bottom y padding-left.
+        padding-top: Permite establecer la cantidad de espacio de relleno en la parte superior del contenido de un elemento.
+        padding-bottom: Permite establecer la cantidad de espacio de relleno en la parte inferior del contenido de un elemento.
     El padding aumenta el tamaño del elemento desde su contenido hacia el borde.
 
     margin:
@@ -25,6 +27,10 @@
     el espacio entre un elemento y los elementos circundantes.
     Puedes establecer valores de margin para los cuatro lados de un elemento,
     utilizando las siguientes propiedades: margin-top, margin-right, margin-bottom y margin-left.
+        margin-top: Permite establecer la cantidad de espacio en blanco (margen) en la parte superior del elemento,
+            creando un espacio vacío entre el elemento y los elementos que lo rodean en la parte superior.
+        margin-bottom: Permite establecer la cantidad de espacio en blanco (margen) en la parte inferior del elemento,
+            creando un espacio vacío entre el elemento y los elementos que lo rodean en la parte inferior.
     El margin no afecta el tamaño real del elemento, sino el espacio que lo rodea.
 
     width:

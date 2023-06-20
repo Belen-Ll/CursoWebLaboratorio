@@ -129,3 +129,9 @@
     background-color: chocolate;
     margin: 30px;
 }
+
+/*TRANSFORMACION DE ELEMENTO*/
+
+.rotate{
+    transform: rotate(20deg); /*en sentido horario dependiendo el grado que se le de*/
+}

@@ -1,0 +1,24 @@
+/*FLEXBOX: Se basa en direcciones de los objetos.*/
+.flex-container{
+    display: flex; /*tipo de posicionamiento de lo que ES la caja principal, una forma de como se va aa mostrar el elemento*/
+    /*Por defecto, los elementos flexibles se presentan en el orden de origen.
+    Sin embargo, la propiedad order controla el orden en que aparecen en el contenedor flexible.
+    
+    se comporta como un bloque, ocupando todo el espacio HORIZONAL DISPONIBLE*/
+    background-color: black;
+    /*DIRECTION, por defecto viene en forma de fila de izquierda a derecha*/
+    /*row -> izquierda a derecha - horizontal
+        row-recerse -> derecha a izquierda
+        column -> columna, verticalmente de arriba a abajo
+        column-reverse -> verticalmente de abajo hacia arriba
+    */
+    flex-direction: column;
+}
+.flex-container div{
+    color: aliceblue;
+    background-color: brown;
+    width: 100px;
+    margin: 2px;
+    border: 1px yellow dotted;
+}
+

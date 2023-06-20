@@ -1,12 +1,20 @@
 /*FLEXBOX: Se basa en direcciones de los objetos.*/
 .flex-container{
+    background-color: black;
+    height: 50vh;
     display: flex; /*tipo de posicionamiento de lo que ES la caja principal, una forma de como se va aa mostrar el elemento*/
     /*Por defecto, los elementos flexibles se presentan en el orden de origen.
     Sin embargo, la propiedad order controla el orden en que aparecen en el contenedor flexible.
     
     se comporta como un bloque, ocupando todo el espacio HORIZONAL DISPONIBLE*/
-    background-color: black;
-    /*DIRECTION, por defecto viene en forma de fila de izquierda a derecha*/
+    
+    /*DIRECTION, por defecto viene en forma de fila de izquierda a derecha
+        Esto establece el eje principal, definiendo así la dirección
+        en la que se colocan los elementos flexibles en el contenedor flexible.
+        Flexbox es un concepto de diseño de una sola dirección.
+    
+    */
+
     /*row -> izquierda a derecha - horizontal
         row-recerse -> derecha a izquierda
         column -> columna, verticalmente de arriba a abajo
@@ -14,17 +22,110 @@
     */
     /*flex-direction: column;*/
 
-    /*AJUSTE DE LINEA - FLEX-WRAP*/
-    flex-wrap: wrap;
+    /*AJUSTE DE LINEA - FLEX-WRAP
+    flex-wrap: wrap; es unajuste */
     /*los elementos se colocan o ajustan en una sola linea por defecto
         wrap: los elementos se ajustan/se colocan en varias lineas
+        wrap-reverse: en varias lineas pero de abajo hacia arriba
     */
+    flex-flow: row nowrap; /*direccion y ajuste*/
+
+    /*JUSTIFICAR EL CONTENIDO*/
+        /*justify-content: ; establece la forma en que se reparte el espacio libre disponible*/
+            /*
+                FLEX-STAR
+                FLEX-END
+                CENTER
+                STRETCH
+                SPACE-BETWEEN - se reparte el espacioa entre los elementos
+                SPACE-AROUND - se reparte entre los elementeos y los extremos
+                SPACE-AVENLY
+            */
+    justify-content: space-evenly;
+
+    /**ALINEACION/
+        /*aling-items:
+            flex-star
+            flex-end
+            center
+            stretch
+            baseline
+        */
+    align-items: stretch; /*sobre los items*/
+
 }
+
 .flex-container div{
     color: aliceblue;
     background-color: brown;
     width: 100px;
+    height: 10vh;
     margin: 2px;
     border: 1px yellow dotted;
 }
 
+/*ORDER, solo funciona sobre los items*/
+.cinco{
+    /*order: -1; se situe en la primera posicion siempre y cuando los otros no tengan order*/
+    order: 2;
+}
+.uno, .dos{
+    order: 1;
+}
+.tres, .cuatro{
+    order: 3;
+    align-self: center;
+    /*
+        flex-star
+        flex-end
+        center
+        stretch
+        baseline
+    */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.principal{
+    display: flex;
+    background-color: black;
+    height: 20vh;
+}
+.principal .itemA{
+    width: 30%;
+    margin: 20px;
+    background-color: cadetblue;
+}
+.principal .itemB{
+    width: 70%;
+    margin: 20px;
+    background-color: burlywood;
+}
+.secundaria{
+    display: flex;
+    background-color: darkgray;
+    
+}
+.secundaria .itemA{
+    width: 30%;
+    margin: 20px;
+    background-color: cadetblue;
+}
+.secundaria .itemB{
+    width: 70%;
+    margin: 20px;
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.secundaria .itemB div{
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    margin: 30px;
+}

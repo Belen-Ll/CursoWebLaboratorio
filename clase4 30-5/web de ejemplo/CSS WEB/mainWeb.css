@@ -4,6 +4,16 @@
     es la cantidad de espacio entre el borde y el contenido del elemento
     si se diera en % se referiria al ancho del elemento padre*/
 }
+
+/*
+    adding controla el espacio dentro de un elemento, 
+    margin controla el espacio alrededor del elemento, 
+    width define el ancho del contenido del elemento
+    height define la altura del contenido del elemento.
+*/
+
+
+
 body{
     background-color: #e5f744; /*color de fondo*/
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*tipo de fuente*/

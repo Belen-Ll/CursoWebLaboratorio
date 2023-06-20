@@ -12,7 +12,13 @@
         column -> columna, verticalmente de arriba a abajo
         column-reverse -> verticalmente de abajo hacia arriba
     */
-    flex-direction: column;
+    /*flex-direction: column;*/
+
+    /*AJUSTE DE LINEA - FLEX-WRAP*/
+    flex-wrap: wrap;
+    /*los elementos se colocan o ajustan en una sola linea por defecto
+        wrap: los elementos se ajustan/se colocan en varias lineas
+    */
 }
 .flex-container div{
     color: aliceblue;

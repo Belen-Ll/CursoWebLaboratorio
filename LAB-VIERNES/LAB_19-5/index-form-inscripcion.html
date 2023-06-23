@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-divise-width, initial-scale=1.0">
+    <title>Formulario de inscripcion</title>
+</head>
+<body>
+    <h1>
+        CURSO DE PROGRACIONA 2023<br>
+        Formulario de inscripcion
+    </h1>
+    <form>
+        <h2>Datos Personales</h2>
+        <label for="nombre/s">nombre/s:</label><br>
+        <input type="text" id="name" name="name" placeholder="nombre/s" required maxlength="20"><br><br>
+        <label for="apellido/s">apellido/s:</label><br>
+        <input type="text" id="lastname" name="lastname" placeholder="apellido/s" required maxlength="20"><br><br>
+        <label for="fecha">fecha de nacimiento:</label><br>
+        <input type="date" value="2010-01-01" min="1954-01-01" max="2000-12-31" required><br><br>
+        <p>genero:</p>
+        <input id="mujer" type="radio" value="m" name="genero">
+        <label for="mujer">mujer</label>
+        <input id="hombre" type="radio" value="h" name="genero">
+        <label for="hombre">hombre</label>
+        <input id="otro" type="radio" name="genero">
+        <label for="otro">prefiero no contestar</label><br>
+         <p>¿trabajas?</p>
+         <input id="si" type="radio" value="s" name="trabajo">
+         <label for="si">si</label>
+         <input id="no" type="radio" value="n" name="trabajo">
+         <label for="no">no</label>
+         <input id="buscando" type="radio" value="b" name="trabajo">
+         <label for="buscando"> estoy buscando trabajo</label>
+        <h2>Medios de Contacto:</h2>
+        <label for="tel">numero telefonico:</label><br>
+        <input type="telephone" id="tel" required maxlength="12"><br><br>
+        <label for="correo">e-mail:</label><br>
+        <input type="texto" id="correo" required maxlength="20"><br><br><br>
+        <h2>queremos saber tu opinion con respecto <br>a que esperas del curso</h2>
+        <textarea name="textoarea" placeholder="dejanos un mensaje" rowa="5" cols="40"></textarea>
+
+        <br><br><br><br>
+        <button type="reset">Borrar formulario</button>
+        <button type="submit">enviar</button>
+    </form>
+</body>
+</html>

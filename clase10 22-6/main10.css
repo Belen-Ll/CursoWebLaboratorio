@@ -18,6 +18,24 @@
     height: 100px;
 }
 
+/*RWD
+LA REGLA @media
+    - Es una técnica CSS introducida en CSS3
+
+@media condicion {
+
+}
+@media (codicion) and (codicion){
+
+}
+
+TIPOS DE MEDIOS
+all => todos los dispositivos o medios.
+screen => monitores o pantallas
+print => previsualizacion de impresion
+*/
+
+
 @media print{
     .col-2{
         display: none;
@@ -27,3 +45,46 @@
     }
 }
 
+/* CONDICIONES MQ
+width
+min-width
+max-width
+orientation => landscape | portrait
+height
+min-height
+max-height
+
+*/
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width:600px) and (max-width:800px)  {
+    [class*="col-"]{
+        width: 33.33%;
+        background-color: white;
+       }
+    body{
+        background-color: red;
+    }
+}
+/* BREAKPOINTS responsive
+
+Podemos agregar Breakpoints donde ciertas partes del diseño se
+comportarán de manera diferente
+
+Exta Small => < 576px
+Small => >= 576px
+Medium => >=768px
+Large => >=992px
+Exta Large => >=1200px
+Extra Extra Larger => >= 1400px
+
+*/
+@media  (max-width:576px)  {
+    [class*="col-"]{
+        width: 40%;
+        background-color: white;
+       }
+}

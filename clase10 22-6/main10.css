@@ -35,6 +35,29 @@ screen => monitores o pantallas
 print => previsualizacion de impresion
 */
 
+img{ /* La propiedad width se establece en un porcentaje y la altura se
+    establece en "auto" 
+    Si la propiedad max-width está en 100%, la imagen se reducirá si es necesario
+    */
+    max-width: 100%;
+    height: auto;
+}
+.imagen{
+    width: 100%;
+    height: 400px;
+    background-image: url(imagen10.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    /* background-size:
+        Sí, Sin embargo... si la establecemos en "100% 100%",
+        la imagen de fondo se extenderá para cubrir todo el área
+        de contenido.
+        si la establecemos en "cover", la
+        imagen de fondo se escalará para cubrir todo el área de
+        contenido.
+    */
+    border: 4px solid yellow;
+}
 
 @media print{
     .col-2{

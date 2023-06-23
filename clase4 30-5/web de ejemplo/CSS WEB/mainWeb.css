@@ -89,6 +89,8 @@ y ajustes de padding, margin, width y height para lograr el aspecto y la funcion
 body{
     background-color: #e5f744; /*color de fondo*/
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*tipo de fuente*/
+        /*La familia de fuentes de un texto se establece con la propiedad font-family.*/
+
 }
 header{
     width: 100%; /*ancho*/
@@ -153,6 +155,7 @@ footer{
     width: 59%;
     padding: 30px;
     background-color: #fa881dec;
+    opacity: 0.3; /*a propiedad opacity especifica la opacidad / transparencia de un elemento.*/
 }
 
 .principal{

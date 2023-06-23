@@ -8,8 +8,8 @@
     Se utiliza un ahoja de estilo externa para definir el estilo de muchas paginas html
     con una hoja de estilo externa, agregue un enlace en la seccion <HEAD> de la pagina html*/
 code{
-    font-size: 4em;
-    color: #cecece !important; /**/
+    font-size: 4em; /*define el tamaño del texto que se utilizará.*/
+    color: #cecece !important; /* color, define el color del texto que se utilizará.*/
     /*la eiqueta, la palabra !IMPORTANT, hace que se salte la jerarquia*/
     background-color: #FFFFFF; /*Se pueden establecer el color de fondo para los elementos HTML con este atributo*/
 }
@@ -19,7 +19,15 @@ code{
 #codeUno{
     color:blue;
 }
-p >b{/*El selector hijo selecciona todos los elementos que son hijos de un elemento especificado.*/
+
+/*
+El selector descendiente coincide con todos los elementos que son descendientes de un elemento especificado
+    div p{
+        background-color:yellow;
+    }
+*/
+
+p > b{/*El selector hijo selecciona todos los elementos que son hijos de un elemento especificado.*/
     color: fuchsia; /*dentro de la eiqueta p donde encuentre la etiqueta b
                         tambien se puede hacer con los class o con id */
 }
@@ -42,7 +50,7 @@ p .codeUno{ /*el elemento p dentro de classUno*/
     color: orange;
     font-size: 2em;
 }
-#p01{
+#p01{ /*identifica el #id*/
     color:mediumvioletred;
     font-size: 2em;/*La propiedad font-size CSS define el tamaño del texto que se utilizará.*/
     font-family:'Franklin Gothic Medium';/*La propiedad font-family CSS define la fuente que se utilizará.*/

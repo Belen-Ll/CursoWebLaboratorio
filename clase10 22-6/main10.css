@@ -1,0 +1,29 @@
+.col-1{
+    width: 8.33%;
+}
+.col-1{
+    width: 16.33%;
+}
+.col-1{
+    width: 25%;
+}
+.col-1{
+    width: 33.33%;
+}
+/*los corchetes acceden a los atributos*/
+[class*="col-"]{
+    background-color: darkorange;
+    margin: 10px;
+    border: 3px solid black;
+    height: 100px;
+}
+
+@media print{
+    .col-2{
+        display: none;
+    }
+    [class*="col-"]{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,12 @@
+.flotante{
+    position: fixed; /*posicion fija*/
+    right: 10;
+    bottom: 10;
+    /*no se quito el height y width*/
+}
+.flotante button{
+    /*se agrego el height y width aqui, para el tamaño este en el button y no en la capa*/
+    height: 80px;
+    width: 80px;
+    background-color: greenyellow;
+}

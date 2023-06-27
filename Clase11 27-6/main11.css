@@ -1,4 +1,9 @@
 .container{
     background-color: cadetblue;
-    height: ;
+    height: 100px;
+}
+
+.container-fluid{
+    background-color: chocolate;
+    height: 100px;
 }

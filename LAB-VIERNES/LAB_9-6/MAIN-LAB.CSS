@@ -85,16 +85,23 @@ main{
     display: flex;
     background-color: lightgrey;
     flex-wrap: wrap; /*se aplica un salto de linea*/
+    justify-content: space-around; /*aplicar espacio entre los card*/
+    
 }
 main .card{
-    width: 25%;
+    width: 23%;
     background-color: white;
-    margin: 10px;
+    margin-block: 10px;
+    /*margin-top: 10px;
+    margin-bottom: 10px;*/
     border-radius: 20px;
+    
 }
 main .card .imagen img{
     max-width: 100%;
     border-radius: 20px 20px 0px 0px;
+    
+    
 }
 main .card .precio{
     margin: 10px;

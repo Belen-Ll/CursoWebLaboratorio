@@ -31,7 +31,7 @@
 }
 
 header{
-    background-color: lavenderblush;
+    background-color:lightpink;
     display: flex;
     height: 20vh;
 }
@@ -66,8 +66,8 @@ header nav ul li a{
     margin-right: 20px;
 }
 header nav ul li a:hover{
-    color: darkred;
-    border-bottom: 3px solid darkred;
+    color: white;
+    border-bottom: 3px solid white;
     font-size: 25px;
 }
 
@@ -75,7 +75,7 @@ footer{
     /*height: 100%;*/
     background-color:palevioletred;
     color: white;
-
+    font-size: 30px;
     height: 15vh;
     display: flex;
     justify-content: space-around;
@@ -85,7 +85,7 @@ footer{
 footer .redes > a{
     text-decoration: none;
     color: darkred;
-    font-size: 20px;
+    font-size: 40px;
     margin: 10px;
 }
 footer .redes > a:hover{

@@ -84,6 +84,7 @@ footer{
 main{
     display: flex;
     background-color: lightgrey;
+    flex-wrap: wrap; /*se aplica un salto de linea*/
 }
 main .card{
     width: 25%;

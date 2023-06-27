@@ -73,8 +73,8 @@ header nav ul li a:hover{
 
 footer{
     /*height: 100%;*/
-    background-color: lightpink;
-    color: black;
+    background-color:palevioletred;
+    color: white;
 
     height: 15vh;
     display: flex;
@@ -86,10 +86,11 @@ footer .redes > a{
     text-decoration: none;
     color: darkred;
     font-size: 20px;
-    margin: 20px;
+    margin: 10px;
 }
 footer .redes > a:hover{
     color: white;
+
 }
 
 

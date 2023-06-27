@@ -139,7 +139,7 @@ aside{
     width: 30%;
     background-color: #6fbaae;
     padding: 20px;
-    float: right; /*si no se coloca,, se baja*/
+    float: right; /*si no se coloca, se baja*/
     height: 100vh; /*el vh es para vertical y horizontal*/
 }
 aside section nav ul{
@@ -184,7 +184,7 @@ aside .form textarea
         margin-bottom: 10px;
     }
 aside .form textarea{
-    height: 100px!important;
+    height: 100px !important;
     resize: none; /*es para deshabilitar que se amplie con el mouse*/
 }
 aside .form button{

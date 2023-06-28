@@ -1,24 +1,39 @@
 .grid{
-    display:grid;
+    display: grid;
+
     /*DEFINE EL TAMAÑO DE LAS COLUMNAS*/
-    grid-template-columns:  repeat(4, 1fr);
-  
-   /* grid-template-columns: 25% 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    /* El tamaño se ajusta al contenido - item*/
+    grid-template-columns: repeat(4, 1fr);
+    /*fr - fraccion restante, va a ver cuanto le queda eindicar cuanto lo divide
+        ejemplo: 25% 1fr 2fr
+    */
+    
+    /* grid-template-columns: 25% 1fr 1fr 1fr 1fr 1fr 1fr;*/
+        /*repeat(numero de veces que se repita, 
+            tamaño - px fr)
+        */
+
     /*DEFINE EL TAMAÑO DE LAS FILAS*/
     grid-template-rows: 50% 30%;
-    /*repeat(numero de veces, tamaño)*/
-    /* column-gap: 30px;
-    row-gap: 10px;
-    gap : row-gap column-gap*/
+    
+
+    /* column-gap: 30px espacio entre celdas - vertical;
+    row-gap: 10px; espacio entre celdas - horizontal
+    gap : row-gap column-gap  - es una combinacion "un atajo"
+        gap: 10px - se aplica en general sino se expecifica row,column
+    */
     gap:10px 30px;
-    /*ALINEA LOS ELEMENTOS EN HORIZONTAL*/
-  /*  justify-items: end;*/
+
+    /* 
+    ALINEA LOS ELEMENTOS EN HORIZONTAL*/
+        /* justify-items: end;*/
     /*Alinea los elementos em vertical*/
-  /*  align-items: stretch;*/
+        /*align-items: stretch;*/
+
     /*ALINEA EL CONTENIDO EN HORIZONTAL*/
-    /*justify-content: start;*/
+        /*justify-content: start;*/
     /*Alinea el contenido en vertical*/
-   /* align-content: space-between;*/
+        /* align-content: space-between;*/
     /* start end center stretch */
     /* start end center stretch space-between space-around*/
 
@@ -82,3 +97,18 @@
     background-color: brown;
     color:aliceblue;
 }
+
+.gridA{
+    margin: 10%;
+    display: grid;
+    /*grid-template-columns: auto auto auto auto;*/
+    grid-template-columns: repeat(4, minmax(200px,1fr));
+    grid-template-rows: 50% 30%;
+
+
+}
+.gridA .itemA{
+    background-color: burlywood;
+    border: 2px solid darkred;
+}
+ 

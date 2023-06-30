@@ -44,6 +44,16 @@ Descargar Bootstrap 5 desde getbootstrap.com
 
 
 </head>
+
+<!--GRID SYSTEM
+ esta construido con flexbox y permite hasta 12 columnas.
+ se pueden combinar para crear diseños dinamicos y fexibles
+-->
+
+<!-- RELLENO DE CONTENEDORES
+    Por defecto, los contenedores tienen 15px de relleno izquierdo y derecho, sin relleno superior o inferior
+    Utilizamos, UTILIDADES DE ESPACIADO, como relleno y margenes adicionales para que se ean aun mejor
+-->
 <body>
     <div class="container"><!-- tamaño del contenido dentro 
     proporciona un contenedor receptivo de ancho fijo
@@ -64,21 +74,41 @@ Descargar Bootstrap 5 desde getbootstrap.com
         
         -->
         <div class="row">
-            <div class="col-sm-6 col-md-4 border border-2">
+            <div class="col-sm-6 col-md-4 border border-2"> <!--OCUPA SIEMPRE EL 33,33% INDEPENDIENTEMENTE DE LA UNIDADD DE MEDIDA-->
+                <!-- col-md-3 col-md-2 "todos en misma linea"--->
+                <!-- col-4 border border-2-->
+                <!-- col-3 col-sm-12 boder boder-12, no toma el col-solo
+                 que por defecto no lo toma encuenta
+                  col-sm-3 col-sm-3 boder boder-2
+                -->
                 item 1
             </div>
             <div class="col-sm-6 col-md-4 border border-2">
+                <!-- col-md-3 col-md-2 "todos en misma linea"--->
                 item 2
             </div>
             <div class="col-sm-6 col-md-4 border border-2">
+                <!-- col-md-3 col-md-2 "todos en misma linea"--->
                 item 3
             </div>
             <div class="col-sm-6 col-md-4 border border-2">
+                <!-- col-sm-12 -->
+                <!-- col-md-3 col-md-2 "todos en misma linea"--->
                 item 4
             </div>
         </div>
 
     </div>
+
+    <!--GRID SYSTEM
+        las columnas se pueden combinar para crear diseños mas dinamicos y fexibles
+
+        .col- disp EXTRA PEQUEÑOS, ancho de pantalla inferior a 576px
+        .col-sm- disp PEQUEÑOS, ancho de pantalla igual/superior a 576px
+        .col-md- disp MEDIANOS, ancho de pantalla igual o superior a 768px
+        .col-lg- disp GRANDES, ancho de pantalla igual o superior a 992px
+        .col-xl- disp XLARGE, ancho de pantalla igual o superior a 1200px
+    -->
     Bootstrap => puntos de interrupcion => MQ (media query)
     sm - (para unidades mayores) 576px <!-- estoy seria el 100 %-->
     md - (para unidades mayores) 768px

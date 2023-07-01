@@ -35,29 +35,7 @@
     grid-row: 1 / span 2;
 }
 
-.gird-content{
-    margin: 20%;
-    background-color: whitesmoke;
-    display: grid;
-    gap: 15px;
-}
-.grid-content .item{
-    text-align: center;
-    background-color:brown;
-    font-size: 30px;
-}
-.grid-content .item-header{
-    grid-area: header;
-}
-.grid-content .item-menu{
-    grid-area: menu;
-}
-.grid-content .item-main{
-    grid-area: main;
-}
-.grid-content .item-aside{
-    grid-area: aside;
-}
-.grid-content .item-footer{
-    grid-area: footer;
-}
+
+
+
+

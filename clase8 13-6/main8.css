@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .grid{
     display: grid;
 
@@ -27,18 +32,19 @@
     /* 
     ALINEA LOS ELEMENTOS EN HORIZONTAL*/
         /* justify-items: end;*/
-    /*Alinea los elementos em vertical*/
+    /*ALINEA LOS ELEMENTOS EN VERTICAL*/
         /*align-items: stretch;*/
 
     /*ALINEA EL CONTENIDO EN HORIZONTAL*/
         /*justify-content: start;*/
     /*Alinea el contenido en vertical*/
         /* align-content: space-between;*/
-    /* start end center stretch */
-    /* start end center stretch space-between space-around*/
-
-   /* place-items: [align-items] [justify-items];
-    place-content: [align-content] [justify-content];*/
+        /* start end center stretch */
+        /* start end center stretch space-between space-around*/
+/*lo que se alinea es el area, pero el contenido no*/
+    /*ATAJOS DE ALINEACION*/
+        /* place-items: [align-items] [justify-items];
+        place-content: [align-content] [justify-content];*/
     place-items : center;
 }
 .grid .item{
@@ -47,7 +53,10 @@
     /* start end center stretch 
     justify-self: ;
     align-self: ;
-    place-self: [align-self] [justify-self];
+    */
+    /*ATAJOS DE ALINEACION
+        place-self: [align-self] [justify-self];
+
     */
 }
 .item-1{
@@ -98,8 +107,14 @@
     color:aliceblue;
 }
 
+.imagen{
+    margin: 5px;
+    width: 80%;
+}
+
+
 .gridA{
-    margin: 20%;
+    margin: 5%;
     display: grid; /*se marca LAYOUT, para determinar la posicion y tamaño*/
     /*grid-template-columns: auto auto auto auto;*/
     /*  grid-template-columns: repeat(4, 1fr) aqui hay 4 columnas con fr*/
@@ -107,11 +122,24 @@
     grid-template-columns: repeat(4, minmax(200px,1fr));
         /*repetir 4 con un minimo y maximo de 200px, en 1fraccionRestante*/
         /*tambien puede ser dentro de las filas*/
-    grid-template-rows: 50% 30%;
+    grid-template-rows: 50% 50%;
+    gap: 15px 30px;
+    /*justify-items: end;
+    align-items: stretch; 
+
+    justify-content: start;
+    align-content: space-between;*/
+    place-items: center;
 
 }
-.grid .itemA{
+.gridA .itemA{
     background-color: burlywood;
     border: 2px solid darkred;
+    
+}
+
+.item-a{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
  

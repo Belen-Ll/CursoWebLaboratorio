@@ -1,5 +1,5 @@
 .grid{
-    margin: 10%;
+    margin: 5%;
     display: grid; /*se marca LAYOUT, para determinar la posicion y tamaño*/
     /*grid-template-columns: auto auto auto auto;*/
     /*  grid-template-columns: repeat(4, 1fr) aqui hay 4 columnas con fr*/
@@ -35,3 +35,13 @@
     grid-row: 1 / span 2;
 }
 
+.grid-content{
+    margin: 10%;
+    background-color: burlywood;
+    display: grid;
+    gap: 10px;
+}
+.grid-content .item1{
+    text-align: center;
+    background-color: darkcyan;
+}

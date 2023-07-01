@@ -18,8 +18,8 @@
     
 
     /* column-gap: 30px espacio entre celdas - vertical;
-    row-gap: 10px; espacio entre celdas - horizontal
-    gap : row-gap column-gap  - es una combinacion "un atajo"
+        row-gap: 10px; espacio entre celdas - horizontal
+        gap : row-gap column-gap  - es una combinacion "un atajo"
         gap: 10px - se aplica en general sino se expecifica row,column
     */
     gap:10px 30px;
@@ -99,15 +99,18 @@
 }
 
 .gridA{
-    margin: 10%;
+    margin: 20%;
     display: grid; /*se marca LAYOUT, para determinar la posicion y tamaño*/
     /*grid-template-columns: auto auto auto auto;*/
+    /*  grid-template-columns: repeat(4, 1fr) aqui hay 4 columnas con fr*/
+    /*  grid-template-columns: 25% repeat(2, 1fr 2fr) */
     grid-template-columns: repeat(4, minmax(200px,1fr));
-    /*aqui hay 4 columnas con fr*/
+        /*repetir 4 con un minimo y maximo de 200px, en 1fraccionRestante*/
+        /*tambien puede ser dentro de las filas*/
     grid-template-rows: 50% 30%;
 
 }
-.gridA .itemA{
+.grid .itemA{
     background-color: burlywood;
     border: 2px solid darkred;
 }

@@ -100,11 +100,11 @@
 
 .gridA{
     margin: 10%;
-    display: grid;
+    display: grid; /*se marca LAYOUT, para determinar la posicion y tamaño*/
     /*grid-template-columns: auto auto auto auto;*/
     grid-template-columns: repeat(4, minmax(200px,1fr));
+    /*aqui hay 4 columnas con fr*/
     grid-template-rows: 50% 30%;
-
 
 }
 .gridA .itemA{

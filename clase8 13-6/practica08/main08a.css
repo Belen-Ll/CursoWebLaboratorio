@@ -43,7 +43,8 @@
     gap: 10px;
     grid-template-areas: 'header header header'
                         'menuu main aside'
-                        'manuu footer .';
+                        'footer footer .'
+                        'footer2 footer2 footer2';
 }
 .grid-content .item{
     text-align: center;
@@ -56,6 +57,11 @@
 }
 .grid-content .item-menuu{
     grid-area: menuu;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item-menuu .item{
+    background-color:darkorange;
 }
 .grid-content .item-main{
     grid-area: main;
@@ -66,6 +72,8 @@
 .grid-content .item-footer{
     grid-area: footer;
 }
-
+.grid-content .item-footer2{
+    grid-area: footer2;
+}
 
 

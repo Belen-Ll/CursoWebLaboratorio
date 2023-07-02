@@ -78,7 +78,7 @@
     
     grid-template-areas: 'header header header'
                           'menu main aside'
-                          'menu footer .'; /*el punto indica donde termina, agregaria un espacio vacio*/
+                          'menu footer .'; /*el punto indica donde termina, agregaria un espacio vacio */
 }
 .grid-content .item{
     text-align: center;

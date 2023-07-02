@@ -1,3 +1,4 @@
+/*TAREA 1*/
 .content-color{
     margin: 5px;
     border: 2px solid black;
@@ -17,13 +18,34 @@
     border: 1px solid black;
 }
 
-
+/*TAREA 2*/
 .content{
     background-color:lightslategrey;
     border: 2px solid black;
     display: grid;
+    
+
 }
 
 .content .item{
     font-size: 20px;
+}
+.content .abecedario{
+    grid-area: abecedario;
+    display: grid;
+    
+    background-color:coral;
+}
+
+.content .item-two{
+    grid-area: two;
+}
+.content .item-three{
+    grid-area: three;
+}
+.content .item-four{
+    grid-area: four;
+}
+.content .item-five{
+    grid-area: five;
 }

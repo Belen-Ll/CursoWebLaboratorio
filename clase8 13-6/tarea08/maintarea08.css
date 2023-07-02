@@ -1,0 +1,29 @@
+.content-color{
+    margin: 5px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, minmax(100px, 1fr));
+    
+}
+.content-color .color{
+    background-color: aqua;
+    grid-row: 1 / span 2;
+}
+.content-color .vacio{
+    border: 1px solid black;
+}
+.content-color .vacio2{
+    border: 1px solid black;
+}
+
+
+.content{
+    background-color:lightslategrey;
+    border: 2px solid black;
+    display: grid;
+}
+
+.content .item{
+    font-size: 20px;
+}

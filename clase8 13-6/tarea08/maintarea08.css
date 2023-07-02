@@ -9,6 +9,7 @@
 }
 .content-color .color{
     background-color: aqua;
+    
     grid-row: 1 / span 2;
 }
 .content-color .vacio{
@@ -20,32 +21,50 @@
 
 /*TAREA 2*/
 .content{
-    background-color:lightslategrey;
-    border: 2px solid black;
-    display: grid;
     
+    background-color:crimson;
+    border: 4px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25px, 100px)s);
+    grid-template-rows: repeat(3, minmax(40px, 1fr) );
 
+    grid-template-areas: 'abecedario abecedario abecedario'
+                            'two three four'
+                            'two five.';                       
 }
 
 .content .item{
-    font-size: 20px;
+    font-size: 20px;    
 }
 .content .abecedario{
+    margin: 10px;
     grid-area: abecedario;
-    display: grid;
+    display: grid; 
     
-    background-color:coral;
+    grid-template-rows: repeat(3, minmax(40px, 1fr) );
+    gap: 10px;
+    border: none;
+
 }
+.abecedario .item{
+    background-color: darkkhaki;
+    border: none;
+}
+
 
 .content .item-two{
     grid-area: two;
+    background-color: chartreuse;
 }
 .content .item-three{
     grid-area: three;
+    background-color: darkcyan;
 }
 .content .item-four{
     grid-area: four;
+    background-color: palevioletred;
 }
 .content .item-five{
     grid-area: five;
+    background-color: darkorchid;
 }

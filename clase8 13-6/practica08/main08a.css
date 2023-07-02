@@ -41,12 +41,15 @@
     background-color: whitesmoke;
     display: grid;
     gap: 10px;
+    grid-template-areas: 'header header header'
+                        'menuu main aside'
+                        'manuu footer .';
 }
 .grid-content .item{
     text-align: center;
     background-color:darksalmon;
     font-size: 30px;
-    grid-template-areas: "header header header";
+    
 }
 .grid-content .item-header{
     grid-area: header;

@@ -1,5 +1,5 @@
 .grid{
-    margin: 5%;
+    margin-top: 5%;
     display: grid; /*se marca LAYOUT, para determinar la posicion y tamaño*/
     /*grid-template-columns: auto auto auto auto;*/
     /*  grid-template-columns: repeat(4, 1fr) aqui hay 4 columnas con fr*/
@@ -35,7 +35,34 @@
     grid-row: 1 / span 2;
 }
 
-
+.grid-content{
+    margin-top: 5%;
+    border: 2px solid brown;
+    background-color: whitesmoke;
+    display: grid;
+    gap: 10px;
+}
+.grid-content .item{
+    text-align: center;
+    background-color:darksalmon;
+    font-size: 30px;
+    grid-template-areas: "header header header";
+}
+.grid-content .item-header{
+    grid-area: header;
+}
+.grid-content .item-menuu{
+    grid-area: menuu;
+}
+.grid-content .item-main{
+    grid-area: main;
+}
+.grid-content .item-aside{
+    grid-area: aside;
+}
+.grid-content .item-footer{
+    grid-area: footer;
+}
 
 
 

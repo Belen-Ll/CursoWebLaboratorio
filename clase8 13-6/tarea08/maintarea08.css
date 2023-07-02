@@ -30,11 +30,14 @@
 
     grid-template-areas: 'abecedario abecedario abecedario'
                             'two three four'
-                            'two five.';                       
+                            'two five.';
+                           
 }
 
 .content .item{
-    font-size: 20px;    
+    font-size: 20px;
+    margin: 2px;
+        
 }
 .content .abecedario{
     margin: 10px;
@@ -42,13 +45,14 @@
     display: grid; 
     
     grid-template-rows: repeat(3, minmax(40px, 1fr) );
-    gap: 10px;
+    gap: 5px;
     border: none;
 
 }
 .abecedario .item{
     background-color: darkkhaki;
     border: none;
+   
 }
 
 

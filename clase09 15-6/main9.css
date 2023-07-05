@@ -70,7 +70,7 @@
     height: 400px;
 }*/
 .item-1{
-    grid-area: 1 / 1 / span 3 / span 2;
+    grid-area: 1 / 1 / span 3 / span 2; /*el span hace referencia a que llegue a "X" valor*/
         /*
         1er valor -> inicia la fila - la posicion
         2do valor -> inicia la columna - la posicion

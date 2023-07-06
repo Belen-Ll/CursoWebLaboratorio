@@ -23,8 +23,17 @@
         sobre o dentro del formulario*/
     border: none;
     border-bottom: 2px dotted red;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
 }
-
+/*solo se vilualiza si esta required*//
+.form input:valid{
+    color: green;
+}
+.form input:invalid{
+    color: red;
+}
 
 
 
@@ -35,27 +44,36 @@
     margin: 15px;
     padding: 15px;
     width: 350px;
-    border: 4px solid orange;
+    border: 4px solid rgb(99, 48, 112);
     border-radius: 12px;
-    background-color:khaki;
+    background-color:lightsalmon;
 }
 .formulario ::placeholder{
-    color:green;
-    opacity: 0.6;
+    color:fuchsia;
+    opacity: 0.5;
 }
 .formulario input{
     outline: none;
     width: 100%;
     padding: 10px;
+    border-radius: 5px;
 }
 .formulario .input{
     padding: 14px;
 }
 .formulario input:focus{
     border: none;
-    border-bottom: dotted yellowgreen;
+    border-bottom: 4px dotted rgb(59, 247, 237);
+    background-color:rgb(221, 113, 221);
+    color: black;
+    border-radius: 12px;
 }
-
+.formulario input:valid{
+    color: green;
+}
+.formulario input:invalid{
+    color: red;
+}
 
 
 

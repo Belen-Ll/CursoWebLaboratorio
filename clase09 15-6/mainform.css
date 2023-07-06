@@ -32,21 +32,24 @@
 
 /*CLASS=FORMULARIO*/
 .formulario{
-    margin: 20px;
-    padding: 20px;
-    width: 500px;
+    margin: 15px;
+    padding: 15px;
+    width: 350px;
     border: 4px solid orange;
     border-radius: 12px;
-    background-color:azure;
+    background-color:khaki;
+}
+.formulario ::placeholder{
+    color:green;
+    opacity: 0.6;
 }
 .formulario input{
     outline: none;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 .formulario .input{
-    padding: 12px;
+    padding: 14px;
 }
 .formulario input:focus{
     border: none;

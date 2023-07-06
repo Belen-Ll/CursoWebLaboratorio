@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
+    <!--
+        Se utiliza un formulario HTML para recopilar la entrada o información del usuario.
+        La entrada del usuario se puede enviar a un servidor para su posterior procesamiento.
+    -->
     <link rel="stylesheet" href="./mainform.css">
 </head>
 <body>
     <!--<div class="form">-->
-            <form class="formulario">
+            <form class="formulario"> <!-- from: define un formulario-->
        <!-- <form action="" class="form"> 
             le coloco el class="form", y se desarma todo
             pero si pongo class="formulario" queda bien
         -->
             <div class="input">
-                <label>Nombre completo</label>
-                <input type="text" required placeholder="Nombre completo">
+                <!--
+                    el atributo label debe ser igual adtibuto id del elemnto input para unirlos
+                -->
+                <label for="Nombres">Nombre completo</label>
+                <input type="text" name="Nombres" id="Nombres" required placeholder="Nombre completo">
             </div>
 
             <div class="input">
-                <label>E-mail</label>
-                <input type="email" required placeholder="email">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="email">
             </div>
 
             <div class="input">
-                <label>Telefono</label>
-                <input type="nummber" required placeholder="Telefono">
+                <label for="tel">Telefono</label>
+                <input type="tel" name="tel" id="tel" placeholder="Telefono">
             </div>
 
             <div class="submit">
-                <button type="submit">Enviar</button>
+                <!--
+                    input type="submit" define un boten para enviar los datos del formulario a un controlador de formulario
+                    - el controlador de formulario suele ser una pagina en el servidor con script para procesar datos de entrada.
+                    el controlador de formulario se espaecifica en el atributo de accion de formulario.
+                -->
+                <button type="submit" value="submit">Enviar</button>
             </div>
 
         </form>

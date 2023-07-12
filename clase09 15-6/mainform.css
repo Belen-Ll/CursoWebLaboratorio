@@ -28,7 +28,7 @@
     border-radius: 10px;
 }
 /*solo se vilualiza si esta required*//
-.form .input:valid{
+.form input:valid{
     color: green;
 }
 .form input:invalid{

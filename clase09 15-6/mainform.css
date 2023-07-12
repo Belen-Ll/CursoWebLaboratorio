@@ -27,7 +27,7 @@
     color: white;
     border-radius: 10px;
 }
-/*solo se vilualiza si esta required*//
+/*solo se vilualiza si esta required*/
 .form input:valid{
     color: green;
 }

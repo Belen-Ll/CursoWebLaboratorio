@@ -12,11 +12,12 @@
 }
 .form .input{
     padding: 10px;
+    position: relative;
 }
 .form input{
     outline: none;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
 }
 .form input:focus{ /*FOCUS -> hace referencia a lo que esta dentro de cada input
@@ -46,6 +47,12 @@
     border: none;
     border-radius: 5px;
 }
+.fa-icons{
+    position: absolute;
+    left: 15px;
+    bottom: 11px;
+    font-size: 14px;
+}
 
 
 
@@ -65,11 +72,15 @@
 .formulario input{
     outline: none;
     width: 100%;
-    padding: 10px;
+    /*padding:10px;*/
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 5px;
 }
 .formulario .input{
-    padding: 14px;
+    padding: 12px;
+    position: relative; /*nos ayuda a que no salga del contenedor
+        y poder posicionar mejor los iconos, señalizados con fa-icons*/
 }
 .formulario input:focus{
     border: none;
@@ -95,7 +106,12 @@
     border: none;
     border-radius: 7px;
 }
-
+.fa-icon{
+    position: absolute;
+    left: 10px;
+    bottom: 14px;
+    font-size: 15px;
+}
 
 
 /*De EJEMPLO GOOGLE*/

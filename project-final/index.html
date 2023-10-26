@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website pelicula</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href=""><!--AQUI LIKEAR LA CARPETA DE ICONOS-->
 </head>
 <body>
     <div>
@@ -25,10 +26,27 @@
             </nav>
         </header>
         <main>
-
+            <!--PERDON, LO PUSE ACA, PERO QUIERO QUE VALLA A UNA NUEVA PESTAñA, linkeda desde el menu donde dice contact-->
+            <form>
+                <label for="nombre/s">nombre/s:</label>
+                <input type="text" id="name" name="name" placeholder="nombre/s" required maxlength="20"><br><br>
+                <label for="apellido/s">apellido/s:</label><br>
+                <input type="text" id="lastname" name="lastname" placeholder="apellido/s" required maxlength="20"><br><br>
+                <label for="correo">correo electronico:</label><br>
+                <input type="texto" id="correo" required maxlength="20"><br><br><br>
+                <h2>Mensaje:</h2>
+                <textarea name="textoarea" placeholder="escribe aqui" rowa="5" cols="40"></textarea>
+        
+                <br><br>
+                <button type="reset">Borrar formulario</button>
+                <button type="submit">enviar</button>
+            </form>
         </main>
         <footer>
-            <p>footer</p>
+            <p>footer aqui podriamos poner link las redes sociales,</p>
+            <a href="#">INSTAGRAM</i></a>
+            <a href="#">FACEBOOK</i></a>
+            <p style="color:black">Todos los derechos reservados &copy; 2023</p>
         </footer>
     </div>
 </body>

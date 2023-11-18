@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
     <title>website pelicula</title>
+    <!-- Enlace a la hoja de estilos principal -->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href=""><!--AQUI LIKEAR LA CARPETA DE ICONOS-->
+    <!-- Enlace a la carpeta de iconos -->
+    <link rel="stylesheet" href="">
 </head>
 <body>
     <div>
+        <!-- Encabezado de la página -->
         <header>
+            <!-- Menú de navegación -->
             <nav id="menu">
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#FILM">FILM</a>
+                    <li>
+                        <a href="#FILM">FILM</a>
+                        <!-- Submenú de la sección FILM -->
                         <ul>
                             <li><a href="#FILM">TRAILER</a></li>
                             <li><a href="#FILM">GALERIA</a></li>
                             <li><a href="#FILM">PELICULA</a></li>
                         </ul>
                     </li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#contact" target="_blank">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
+        <!-- Contenido principal de la página -->
         <main>
-            <!--PERDON, LO PUSE ACA, PERO QUIERO QUE VALLA A UNA NUEVA PESTAñA, linkeda desde el menu donde dice contact-->
+            <!-- Formulario de contacto -->
             <form>
                 <label for="nombre/s">nombre/s:</label>
                 <input type="text" id="name" name="name" placeholder="nombre/s" required maxlength="20"><br><br>
+                
                 <label for="apellido/s">apellido/s:</label><br>
                 <input type="text" id="lastname" name="lastname" placeholder="apellido/s" required maxlength="20"><br><br>
+                
                 <label for="correo">correo electronico:</label><br>
                 <input type="texto" id="correo" required maxlength="20"><br><br><br>
+                
                 <h2>Mensaje:</h2>
-                <textarea name="textoarea" placeholder="escribe aqui" rowa="5" cols="40"></textarea>
+                <textarea name="textoarea" placeholder="escribe aqui" rows="5" cols="40"></textarea><br><br>
         
-                <br><br>
                 <button type="reset">Borrar formulario</button>
                 <button type="submit">enviar</button>
             </form>
         </main>
         <footer>
-            <p>footer aqui podriamos poner link las redes sociales,</p>
+            
+            <p>Encuentranos en redes sociales:</p>
             <a href="#">INSTAGRAM</i></a>
             <a href="#">FACEBOOK</i></a>
+            <!-- Información de derechos de autor -->
             <p style="color:black">Todos los derechos reservados &copy; 2023</p>
         </footer>
     </div>

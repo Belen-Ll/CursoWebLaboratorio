@@ -19,7 +19,12 @@
             <!-- Menú de navegación -->
             <nav id="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="index.html" target="_self">HOME</a></li>
+                        <!-- 
+                            href="index.html" apunta al archivo index.html en el mismo directorio que la página actual.
+                            target="_self" especifica que el enlace debe abrirse en la misma ventana o pestaña.
+                            Esto asegura que la página se recargue en la ventana actual.
+                        -->
                     <li>
                         <a href="#FILM">FILM</a>
                         <!-- Submenú de la sección FILM -->
@@ -37,17 +42,17 @@
         <main>
             <!-- Formulario de contacto -->
             <form id="contact-form">
-                <label for="nombre/s">nombre/s:</label>
+                <label for="name">Nombre/s:</label>
                 <input type="text" id="name" name="name" placeholder="nombre/s" required maxlength="20"><br><br>
                 
-                <label for="apellido/s">apellido/s:</label><br>
+                <label for="lastname">apellido/s:</label><br>
                 <input type="text" id="lastname" name="lastname" placeholder="apellido/s" required maxlength="20"><br><br>
                 
-                <label for="correo">correo electronico:</label><br>
-                <input type="texto" id="correo" required maxlength="20"><br><br><br>
+                <label for="email">correo electronico:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@example.com" maxlength="50"><br><br>
                 
                 <h2>Mensaje:</h2>
-                <textarea name="textoarea" placeholder="escribe aqui" rows="5" cols="40"></textarea><br><br>
+                <textarea name="textarea" placeholder="escribe aqui" rows="5" cols="40"></textarea><br><br>
         
                 <button type="reset">Borrar formulario</button>
                 <button type="submit">enviar</button>

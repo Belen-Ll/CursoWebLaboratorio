@@ -58,9 +58,44 @@ main{
     width: 100%;
 }
 
-/* Estilo para ocultar el formulario inicialmente */
+/*FORMULARIO*/
 form {
-    display: none;
+    display: none;/* Estilo para ocultar el formulario inicialmente */
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+label {/* Estilos para etiquetas y campos de entrada */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button { /*botones*/
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
 }
 
 /*pie de pagina*/

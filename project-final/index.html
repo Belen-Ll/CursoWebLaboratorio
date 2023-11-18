@@ -29,14 +29,14 @@
                             <li><a href="#FILM">PELICULA</a></li>
                         </ul>
                     </li>
-                    <li><a href="#contact" target="_blank">CONTACT</a></li>
+                    <li><a href="#contact" id="contact-link">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
         <!-- Contenido principal de la página -->
         <main>
             <!-- Formulario de contacto -->
-            <form>
+            <form id="contact-form">
                 <label for="nombre/s">nombre/s:</label>
                 <input type="text" id="name" name="name" placeholder="nombre/s" required maxlength="20"><br><br>
                 
@@ -53,14 +53,19 @@
                 <button type="submit">enviar</button>
             </form>
         </main>
+
         <footer>
-            
             <p>Encuentranos en redes sociales:</p>
+            <br>
             <a href="#">INSTAGRAM</i></a>
             <a href="#">FACEBOOK</i></a>
+            <br><br>
             <!-- Información de derechos de autor -->
             <p style="color:black">Todos los derechos reservados &copy; 2023</p>
         </footer>
     </div>
+    
+    <!-- Script JavaScript para mostrar el formulario al hacer clic en "CONTACT" -->
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -57,6 +57,13 @@ main{
     clear: both;
     width: 100%;
 }
+
+/* Estilo para ocultar el formulario inicialmente */
+form {
+    display: none;
+}
+
+/*pie de pagina*/
 footer{
     clear: both;
     color: black;

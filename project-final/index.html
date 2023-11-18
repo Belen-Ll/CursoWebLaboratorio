@@ -48,9 +48,19 @@
                 <label for="lastname">apellido/s:</label><br>
                 <input type="text" id="lastname" name="lastname" placeholder="apellido/s" required maxlength="20"><br><br>
                 
-                <label for="email">correo electronico:</label><br>
+                <label for="email">correo electronico:</label>
                 <input type="email" id="email" name="email" placeholder="example@example.com" maxlength="50"><br><br>
                 
+                <label for="reason">Motivo de su consulta:</label>
+                    <div class="custom-select">
+                        <select id="reason" name="reason">
+                            <option value="movie">sobre la pelicula</option>
+                            <option value="colaboration">formas de colaboracion</option>
+                            <option value="info">Informacion adicional</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div><br>
+
                 <h2>Mensaje:</h2>
                 <textarea name="textarea" placeholder="escribe aqui" rows="5" cols="40"></textarea><br><br>
         
